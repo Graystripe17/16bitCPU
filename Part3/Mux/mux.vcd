@@ -1,0 +1,41 @@
+$date
+  Thu Mar  5 12:00:36 2020
+$end
+$version
+  GHDL v0
+$end
+$timescale
+  1 fs
+$end
+$scope module standard $end
+$upscope $end
+$scope module std_logic_1164 $end
+$upscope $end
+$scope module t_mux $end
+$var reg 16 ! i1_t[15:0] $end
+$var reg 16 " i2_t[15:0] $end
+$var reg 1 # s_t $end
+$var reg 16 $ y_t[15:0] $end
+$scope module mux $end
+$var reg 16 % a1[15:0] $end
+$var reg 16 & a2[15:0] $end
+$var reg 1 ' sel $end
+$var reg 16 ( b[15:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+b0000000000000000 !
+b1111111111111111 "
+0#
+b0000000000000000 $
+b0000000000000000 %
+b1111111111111111 &
+0'
+b0000000000000000 (
+#1000000000000
+1#
+b1111111111111111 $
+1'
+b1111111111111111 (
+#2000000000000
