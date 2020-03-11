@@ -1,0 +1,79 @@
+$date
+  Wed Mar 11 14:35:49 2020
+$end
+$version
+  GHDL v0
+$end
+$timescale
+  1 fs
+$end
+$scope module standard $end
+$upscope $end
+$scope module std_logic_1164 $end
+$upscope $end
+$scope module numeric_std $end
+$upscope $end
+$scope module t_registerfile $end
+$var reg 4 ! rd_t[11:8] $end
+$var reg 4 " r1_t[7:4] $end
+$var reg 4 # r2_t[3:0] $end
+$var reg 1 $ cregwrite_t $end
+$var reg 16 % input_t[15:0] $end
+$var reg 4 & inr_t[3:0] $end
+$var reg 16 ' outr1tooffsetmux_t[15:0] $end
+$var reg 16 ( outr2toalu_t[15:0] $end
+$var reg 16 ) tomemory_t[15:0] $end
+$var reg 16 * outvalue_t[15:0] $end
+$var reg 1 + reset_t $end
+$scope module rf $end
+$var reg 4 , rd[11:8] $end
+$var reg 4 - r1[7:4] $end
+$var reg 4 . r2[3:0] $end
+$var reg 1 / cregwrite $end
+$var reg 16 0 input[15:0] $end
+$var reg 4 1 inr[3:0] $end
+$var reg 16 2 outr1tooffsetmux[15:0] $end
+$var reg 16 3 outr2toalu[15:0] $end
+$var reg 16 4 tomemory[15:0] $end
+$var reg 16 5 outvalue[15:0] $end
+$var reg 1 6 reset $end
+$comment register16 is not handled $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+b0000 !
+b0000 "
+b0000 #
+0$
+b0000000000000000 %
+b0000 &
+b0000000000000000 '
+b0000000000000000 (
+b0000000000000000 )
+b0000000000000000 *
+1+
+b0000 ,
+b0000 -
+b0000 .
+0/
+b0000000000000000 0
+b0000 1
+b0000000000000000 2
+b0000000000000000 3
+b0000000000000000 4
+b0000000000000000 5
+16
+#1000000000000
+b0100 !
+b0101 "
+b0110 #
+0+
+b0100 ,
+b0101 -
+b0110 .
+06
+#2000000000000
+1$
+1/
+#3000000000000
