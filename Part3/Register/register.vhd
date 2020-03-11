@@ -25,7 +25,7 @@ architecture Behavioral of RegisterFile is
         
 begin
     -- Asynchronous reset 
-    process(reset, rd, r1, r2)
+    process(reset, rd, r1, r2, cRegWrite)
         begin
             if (reset = '1') then
 --                register16 <= (0 => "0000000000000000",
@@ -44,32 +44,21 @@ begin
                 outr2toALU <= "0000000000000000";
                 toMemory <= "0000000000000000";
                 outvalue <= "0000000000000000";
-                assert register16(0) = "0000000000000000";
                 report "reset on";
             else
                 outr1toOffsetMux <= register16(to_integer(unsigned(r1)));
                 outr2toALU <= register16(to_integer(unsigned(r2)));
                 toMemory <= register16(to_integer(unsigned(r1))); -- Load or store
-                report "outputs set";
                 outvalue <= "0000000000000000";
                 report "reset off";
             end if;
-    end process;
-
-    -- Write input to register16(r2)
-    process (cRegWrite)
-        begin
             if (cRegWrite = '1') then
-                -- register16(4) <= "1010101010101010";
-                assert r2 = "0110";
-                assert to_integer(unsigned(r2)) = 6;
-                assert input = "0000000000000000";
-                -- register16(to_integer(unsigned(r2))) <= input;
-                register16(6) <= "1000000000000000";
-                assert register16(6) = "0000000000000000";
+                register16(to_integer(unsigned(rd))) <= input; -- Won't change immediately
+                outvalue <= input;
                 report "cRegWrite set";
             end if;
     end process;
+
 
 
 end Behavioral;

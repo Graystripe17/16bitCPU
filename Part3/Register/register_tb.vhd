@@ -51,21 +51,48 @@ architecture behavior of t_registerfile is
         );
         process
             begin
+                -- Test reset
                 reset_t <= '1';
                 wait for 1 ms;
                 reset_t <= '0';
+                assert outvalue_t = "0000000000000000";
+
                 -- Test writing to a register
                 rd_t <= "0100"; -- register 4
                 r1_t <= "0101"; -- register 5
                 r2_t <= "0110"; -- register 6
-                wait for 1 ms;
+                input_t <= "0000000000000011";
                 cRegWrite_t <= '1';
                 wait for 1 ms;
-                -- assert register16(4) = "0000000000001110";
-                -- report to_hex_string(outr1toOffsetMux_t);
-                -- assert outr1toOffsetMux_t = "0000000000011111"; -- Reg 5
-                -- assert outr2toALU_t = "0000000000111111"; -- Reg 6
-                -- assert cRegWrite_t = '1';
+                cRegWrite_t <= '0';
+                assert outvalue_t = input_t;
+                wait for 5 ms;
+
+                -- Test outr1
+                -- Write 3 to register 4
+                rd_t <= "0100"; -- register 4
+                input_t <= "0000000000000011";
+                cRegWrite_t <= '1';
+                wait for 1 ms;
+                cRegWrite_t <= '0';
+                -- Read register 4
+                r1_t <= "0100";
+                wait for 1 ms;
+                assert outr1toOffsetMux_t = "0000000000000011";
+
+                -- Test outr2
+                -- Write 7 to register 5
+                rd_t <= "0101"; -- register 5
+                input_t <= "0000000000000111";
+                cRegWrite_t <= '1';
+                wait for 1 ms;
+                cRegWrite_t <= '0';
+                -- Read register 5
+                r2_t <= "0101";
+                wait for 1 ms;
+                assert outr2toALU_t = "0000000000000111";
+                
+                report "DONE";
                 wait for 10000 ms;
         end process;
 
