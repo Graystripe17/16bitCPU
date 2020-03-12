@@ -1,0 +1,4 @@
+v 4
+file . "ALU.vhd" "63d441823c40c47019fe5a6a14e6a53ae65f0110" "20200312174113.860":
+  entity t_alu at 1( 0) + 0 on 25;
+  architecture behavior of t_alu at 8( 98) + 0 on 26;
