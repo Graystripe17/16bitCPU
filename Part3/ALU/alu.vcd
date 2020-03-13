@@ -1,5 +1,5 @@
 $date
-  Thu Mar 12 12:41:13 2020
+  Thu Mar 12 16:41:48 2020
 $end
 $version
   GHDL v0
@@ -22,6 +22,13 @@ $var reg 10 % outtomemory_t[9:0] $end
 $var reg 16 & outtoregmux_t[15:0] $end
 $var reg 1 ' reset_t $end
 $scope module math $end
+$var reg 4 ( aluop[3:0] $end
+$var reg 16 ) a[15:0] $end
+$var reg 16 * b[15:0] $end
+$var reg 1 + isbranch $end
+$var reg 10 , outtomemory[9:0] $end
+$var reg 16 - outtoregmux[15:0] $end
+$var reg 1 . reset $end
 $upscope $end
 $upscope $end
 $enddefinitions $end
@@ -33,9 +40,18 @@ bUUUUUUUUUUUUUUUU #
 b0000000000 %
 b0000000000000000 &
 1'
+bUUUU (
+bUUUUUUUUUUUUUUUU )
+bUUUUUUUUUUUUUUUU *
+0+
+b0000000000 ,
+b0000000000000000 -
+1.
 #1000000000000
 b0000 !
 b0000001000000000 "
+b0000 (
+b0000001000000000 )
 #2000000000000
 #3000000000000
 #4000000000000

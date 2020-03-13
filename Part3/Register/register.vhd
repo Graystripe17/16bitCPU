@@ -3,7 +3,7 @@ use IEEE.std_logic_1164.all;
 use IEEE.numeric_std.all;
 
 entity RegisterFile is
-    port(
+    port (
         rd: in STD_LOGIC_VECTOR(11 downto 8) := "0000";
         r1: in STD_LOGIC_VECTOR(7 downto 4) := "0000";
         r2: in STD_LOGIC_VECTOR(3 downto 0) := "0000";
@@ -25,7 +25,7 @@ architecture Behavioral of RegisterFile is
         
 begin
     -- Asynchronous reset 
-    process(reset, rd, r1, r2, cRegWrite)
+    process (reset, rd, r1, r2, cRegWrite)
         begin
             if (reset = '1') then
 --                register16 <= (0 => "0000000000000000",

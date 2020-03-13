@@ -7,7 +7,7 @@ end t_registerfile;
 
 architecture behavior of t_registerfile is
     component RegisterFile is
-        port(
+        port (
             rd: in STD_LOGIC_VECTOR(11 downto 8);
             r1: in STD_LOGIC_VECTOR(7 downto 4);
             r2: in STD_LOGIC_VECTOR(3 downto 0);
@@ -79,6 +79,8 @@ architecture behavior of t_registerfile is
                 r1_t <= "0100";
                 wait for 1 ms;
                 assert outr1toOffsetMux_t = "0000000000000011";
+                -- Test toMemory
+                assert toMemory_t = "0000000000000011";
 
                 -- Test outr2
                 -- Write 7 to register 5
@@ -91,6 +93,7 @@ architecture behavior of t_registerfile is
                 r2_t <= "0101";
                 wait for 1 ms;
                 assert outr2toALU_t = "0000000000000111";
+                
                 
                 report "DONE";
                 wait for 10000 ms;
