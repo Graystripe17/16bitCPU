@@ -1,0 +1,90 @@
+$date
+  Fri Mar 13 13:36:52 2020
+$end
+$version
+  GHDL v0
+$end
+$timescale
+  1 fs
+$end
+$scope module standard $end
+$upscope $end
+$scope module std_logic_1164 $end
+$upscope $end
+$scope module numeric_std $end
+$upscope $end
+$scope module t_adder $end
+$var reg 16 ! a_t[15:0] $end
+$var reg 16 " b_t[15:0] $end
+$var reg 16 # sum_t[15:0] $end
+$var reg 1 $ cout_t $end
+$var reg 1 % reset_t $end
+$scope module add $end
+$var reg 16 & a[15:0] $end
+$var reg 16 ' b[15:0] $end
+$var reg 16 ( sum[15:0] $end
+$var reg 1 ) cout $end
+$var reg 1 * reset $end
+$var reg 17 + result[16:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+b0000000000000000 !
+b0000000000000000 "
+b0000000000000000 #
+0$
+1%
+b0000000000000000 &
+b0000000000000000 '
+b0000000000000000 (
+0)
+1*
+b00000000000000000 +
+#1000000000000
+b1000000000000001 !
+b1000000000001101 "
+b0000000000001110 #
+1$
+0%
+b1000000000000001 &
+b1000000000001101 '
+b0000000000001110 (
+1)
+0*
+b10000000000001110 +
+#2000000000000
+#4000000000000
+b0000000000000000 #
+0$
+1%
+b0000000000000000 (
+0)
+1*
+b00000000000000000 +
+#5000000000000
+b0000000000001110 #
+1$
+0%
+b0000000000001110 (
+1)
+0*
+b10000000000001110 +
+#6000000000000
+#8000000000000
+b0000000000000000 #
+0$
+1%
+b0000000000000000 (
+0)
+1*
+b00000000000000000 +
+#9000000000000
+b0000000000001110 #
+1$
+0%
+b0000000000001110 (
+1)
+0*
+b10000000000001110 +
+#10000000000000
