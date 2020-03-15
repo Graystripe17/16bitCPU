@@ -48,14 +48,12 @@ begin
             else
                 outr1toOffsetMux <= register16(to_integer(unsigned(r1)));
                 outr2toALU <= register16(to_integer(unsigned(r2)));
-                toMemory <= register16(to_integer(unsigned(r1))); -- Load or store
-                outvalue <= "0000000000000000";
-                report "reset off";
-            end if;
-            if (cRegWrite = '1') then
-                register16(to_integer(unsigned(rd))) <= input; -- Won't change immediately
                 outvalue <= input;
-                report "cRegWrite set";
+                toMemory <= register16(to_integer(unsigned(r1))); -- Load or store
+                if (cRegWrite = '1') then
+                    register16(to_integer(unsigned(rd))) <= input; -- Won't change immediately
+                    report "cRegWrite set";
+                end if;
             end if;
     end process;
 

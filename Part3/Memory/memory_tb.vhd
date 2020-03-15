@@ -44,6 +44,7 @@ architecture behavior of t_memory is
             
             -- Test mem read/write
             cMemWrite_t <= '1';
+            cMemRead_t <= '0';
             ADDR_t <= "1010101010"; -- Address 682
             DIN_t <= "1000000000000000"; -- 32768
             wait for 1 ms;
@@ -53,7 +54,12 @@ architecture behavior of t_memory is
             wait for 1 ms;
             assert outMemory_t = DIN_t;
 
+            -- Test passthrough
+            cMemRead_t <= '0';
+            cMemWrite_t <= '0';
+            wait for 1 ms;
+            assert outMemory_t = DIN_t;
+
         end process;
-            
 
 end behavior;
