@@ -39,7 +39,6 @@ architecture behavior of t_controlunit is
             cMemRead => cMemRead_t,
             cMemToReg => cMemToReg_t,
             cLdi => cLdi_t,
-            cMv => cMv_t
         );
         process
         begin

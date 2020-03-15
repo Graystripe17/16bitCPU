@@ -24,14 +24,41 @@ begin
         if (reset = '1') then
             cRegWrite <= '0';
             cOffset <= '0';
-            cALUOp <= '0';
+            cALUOp <= "0000";
             cMemWrite <= '0';
             cMemRead <= '0';
             cMemToReg <= '0';
             cLdi <= '0';
-            cMv <= '0';
         else
-            
+            case opcode is
+                when "0000" => -- halt
+                    cRegWrite <= '0';
+                    cOffset <= '0';
+                    cALUOp <= "0000";
+                    cMemWrite <= '0';
+                    cMemRead <= '0';
+                    cMemToReg <= '0';
+                    cLdi <= '0';
+                when "0001" => -- ld
+                    -- Loads from memory into rd
+                    cRegWrite <= '1';
+                    cOffset <= '0';
+                    cALUOp <= "0001";
+                    cMemWrite <= '0';
+                    cMemRead <= '1';
+                    cMemToReg <= '0';
+                    cLdi <= '0';
+                when "0010" => -- ldi
+                    -- Loads 8 bit immediate into rd
+                    cRegWrite <= '1';
+                    cOffset <= '0';
+                    cALUOp <= "0010";
+                    cMemWrite <= '0';
+                    cMemRead <= '0';
+                    cMemToReg <= '-'; -- Ignored
+                    cLdi <= '1';
+                when "0011" => -- 
+            end case;
         end if;
     end process;
 end Behavioral;

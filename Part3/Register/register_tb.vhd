@@ -94,7 +94,6 @@ architecture behavior of t_registerfile is
                 wait for 1 ms;
                 assert outr2toALU_t = "0000000000000111";
                 
-                
                 report "DONE";
                 wait for 10000 ms;
         end process;

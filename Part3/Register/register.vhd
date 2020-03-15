@@ -8,6 +8,7 @@ entity RegisterFile is
         r1: in STD_LOGIC_VECTOR(7 downto 4) := "0000";
         r2: in STD_LOGIC_VECTOR(3 downto 0) := "0000";
         cRegWrite: in STD_LOGIC := '0';
+        cLdi: in STD_LOGIC;
         input: in STD_LOGIC_VECTOR(15 downto 0);
         inr: in STD_LOGIC_VECTOR(3 downto 0); -- Debugging
         outr1toOffsetMux: out STD_LOGIC_VECTOR(15 downto 0);
@@ -25,7 +26,7 @@ architecture Behavioral of RegisterFile is
         
 begin
     -- Asynchronous reset 
-    process (reset, rd, r1, r2, cRegWrite)
+    process (reset, rd, r1, r2, cRegWrite, cLdi, cMv)
         begin
             if (reset = '1') then
 --                register16 <= (0 => "0000000000000000",
@@ -50,9 +51,15 @@ begin
                 outr2toALU <= register16(to_integer(unsigned(r2)));
                 outvalue <= input;
                 toMemory <= register16(to_integer(unsigned(r1))); -- Load or store
-                if (cRegWrite = '1') then
-                    register16(to_integer(unsigned(rd))) <= input; -- Won't change immediately
-                    report "cRegWrite set";
+                if (cLdi = '1') then
+                    -- Special instruction ignore MemToReg
+                    register16(to_integer(unsigned(rd))) <= "00000000" & r1 & r2;
+                    report "cLdi set";
+                else
+                    if (cRegWrite = '1') then
+                        register16(to_integer(unsigned(rd))) <= input; -- Won't change immediately
+                        report "cRegWrite set";
+                    end if;
                 end if;
             end if;
     end process;

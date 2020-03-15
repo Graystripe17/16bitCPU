@@ -36,7 +36,7 @@ begin
                         isBranch <= '0';
                         outToRegMux <= "0000000000000000";
                     when "0010" => -- ldi
-                        -- REDO THIS WHOLE INSTRUCTION
+                        -- Handled internally through register file
                     when "0011" => -- sd
                         -- Send out last 10 bits of r2
                         outToMemory <= B(9 downto 0);
@@ -44,7 +44,11 @@ begin
                         isBranch <= '0';
                         outToRegMux <= "0000000000000000";
                     when "0100" => -- mv
-                        -- AGAIN RETHINK THIS INSTRUCTION
+                        -- Pass contents of r1 to outToRegMux
+                        outToRegMux <= "A";
+                        -- Reset outputs
+                        isBranch <= '0';
+                        outToRegMux <= "0000000000000000";
                     when "0101" => -- add
                         outToRegMux <= STD_LOGIC_VECTOR(signed(A) + signed(B));
                         -- Reset outputs
