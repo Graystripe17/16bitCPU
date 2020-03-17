@@ -12,14 +12,14 @@ entity ControlUnit is
         cMemRead: out STD_LOGIC;
         cMemToReg: out STD_LOGIC;
         cLdi: out STD_LOGIC;
-        cMv: out STD_LOGIC;
+        reset: in STD_LOGIC
     );
 end ControlUnit;
 
 architecture Behavioral of ControlUnit is
     
 begin
-    process (reset)
+    process (reset, opcode)
     begin
         if (reset = '1') then
             cRegWrite <= '0';
@@ -30,34 +30,55 @@ begin
             cMemToReg <= '0';
             cLdi <= '0';
         else
+            cALUOp <= opcode;
             case opcode is
-                when "0000" => -- halt
-                    cRegWrite <= '0';
-                    cOffset <= '0';
-                    cALUOp <= "0000";
-                    cMemWrite <= '0';
-                    cMemRead <= '0';
-                    cMemToReg <= '0';
-                    cLdi <= '0';
                 when "0001" => -- ld
                     -- Loads from memory into rd
                     cRegWrite <= '1';
                     cOffset <= '0';
-                    cALUOp <= "0001";
                     cMemWrite <= '0';
                     cMemRead <= '1';
-                    cMemToReg <= '0';
+                    cMemToReg <= '1'; -- Pass back memory
                     cLdi <= '0';
                 when "0010" => -- ldi
                     -- Loads 8 bit immediate into rd
                     cRegWrite <= '1';
                     cOffset <= '0';
-                    cALUOp <= "0010";
                     cMemWrite <= '0';
                     cMemRead <= '0';
-                    cMemToReg <= '-'; -- Ignored
+                    cMemToReg <= 'X'; -- Ignored
                     cLdi <= '1';
-                when "0011" => -- 
+                when "0011" => -- sd
+                    -- Stores to memory
+                    cRegWrite <= '0';
+                    cOffset <= '0';
+                    cMemWrite <= '1';
+                    cMemRead <= '0';
+                    cMemToReg <= '0';
+                    cLdi <= '0';
+                when "0100" | "0101" | "0110" | "0111" | "1000" | "1001" | "1010" => 
+                    -- mv | add | sub | sll | srl | and | or
+                    cRegWrite <= '1';
+                    cOffset <= '0';
+                    cMemWrite <= '0';
+                    cMemRead <= '0';
+                    cMemToReg <= '0'; -- Pass back ALU out
+                    cLdi <= '0';
+                when "1011" | "1100" | "1101" | "1110" | "1111" =>
+                    -- beq | blt | bge | jal | jalr
+                    cRegWrite <= '1';
+                    cOffset <= '1';
+                    cMemWrite <= '0';
+                    cMemRead <= '0';
+                    cMemToReg <= '0';
+                    cLdi <= '0';
+                when others => -- halt
+                    cRegWrite <= '0';
+                    cOffset <= '0';
+                    cMemWrite <= '0';
+                    cMemRead <= '0';
+                    cMemToReg <= '0';
+                    cLdi <= '0';
             end case;
         end if;
     end process;
