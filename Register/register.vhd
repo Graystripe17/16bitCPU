@@ -2,7 +2,7 @@ library IEEE;
 use IEEE.std_logic_1164.all;
 use IEEE.numeric_std.all;
 
--- TODO: ADD PROGRAM COUNTER
+-- TODO: ADD PROGRAM COUNTER in x15
 
 entity RegisterFile is
     port (
@@ -11,12 +11,15 @@ entity RegisterFile is
         r2: in STD_LOGIC_VECTOR(3 downto 0) := "0000";
         cRegWrite: in STD_LOGIC := '0';
         cLdi: in STD_LOGIC;
-        input: in STD_LOGIC_VECTOR(15 downto 0);
+        writeInput: in STD_LOGIC_VECTOR(15 downto 0);
         inr: in STD_LOGIC_VECTOR(3 downto 0); -- Debugging
         outr1toOffsetMux: out STD_LOGIC_VECTOR(15 downto 0);
         outr2toALU: out STD_LOGIC_VECTOR(15 downto 0);
         toMemory: out STD_LOGIC_VECTOR(15 downto 0) := "0000000000000000";
         outvalue: out STD_LOGIC_VECTOR(15 downto 0); -- Debugging
+        PCtoInstruction: out STD_LOGIC_VECTOR(15 downto 0);
+        PCtoAdders: out STD_LOGIC_VECTOR(15 downto 0);
+        PCinput: in STD_LOGIC_VECTOR(15 downto 0);
         reset: in STD_LOGIC := '1'
     );
 end RegisterFile;
@@ -28,7 +31,7 @@ architecture Behavioral of RegisterFile is
         
 begin
     -- Asynchronous reset 
-    process (reset, rd, r1, r2, cRegWrite, cLdi, cMv)
+    process (reset, rd, r1, r2, cRegWrite, cLdi)
         begin
             if (reset = '1') then
 --                register16 <= (0 => "0000000000000000",
@@ -51,7 +54,7 @@ begin
             else
                 outr1toOffsetMux <= register16(to_integer(unsigned(r1)));
                 outr2toALU <= register16(to_integer(unsigned(r2)));
-                outvalue <= input;
+                outvalue <= writeInput;
                 toMemory <= register16(to_integer(unsigned(r1))); -- Load or store
                 if (cLdi = '1') then
                     -- Special instruction ignore MemToReg
@@ -59,7 +62,7 @@ begin
                     report "cLdi set";
                 else
                     if (cRegWrite = '1') then
-                        register16(to_integer(unsigned(rd))) <= input; -- Won't change immediately
+                        register16(to_integer(unsigned(rd))) <= writeInput; -- Won't change immediately
                         report "cRegWrite set";
                     end if;
                 end if;
