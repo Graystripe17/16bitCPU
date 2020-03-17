@@ -2,6 +2,8 @@ library IEEE;
 use IEEE.std_logic_1164.all;
 use IEEE.numeric_std.all;
 
+-- TODO: ADD PROGRAM COUNTER
+
 entity RegisterFile is
     port (
         rd: in STD_LOGIC_VECTOR(11 downto 8) := "0000";

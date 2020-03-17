@@ -1,7 +1,0 @@
-v 4
-file . "memory_tb.vhd" "60429aace203280102aa0c1e726b388bb50db0de" "20200313013930.793":
-  entity t_memory at 1( 0) + 0 on 13;
-  architecture behavior of t_memory at 8( 104) + 0 on 14;
-file . "memory.vhd" "ec95313431329e6470c80b64f52057181ecd92ea" "20200313013930.792":
-  entity memory at 1( 0) + 0 on 11;
-  architecture behavioral of memory at 16( 366) + 0 on 12;

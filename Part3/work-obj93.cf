@@ -1,7 +1,0 @@
-v 4
-file . "mux.vhd" "9697aeaa125fee45d9adc037744bfb690c3b87c4" "20200305142433.323":
-  entity mux2 at 1( 0) + 0 on 33;
-  architecture rtl of mux2 at 13( 251) + 0 on 34;
-file . "mux_tb.vhd" "bcd17ad53fcfbff23520087d6ac044d2f0c08999" "20200305142433.323":
-  entity t_mux at 1( 0) + 0 on 35;
-  architecture behavior of t_mux at 7( 72) + 0 on 36;

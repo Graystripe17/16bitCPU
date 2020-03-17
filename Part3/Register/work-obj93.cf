@@ -1,7 +1,0 @@
-v 4
-file . "register.vhd" "5050c6dbe84186b47249cc67025913caf11d2a36" "20200315001241.743":
-  entity registerfile at 1( 0) + 0 on 319;
-  architecture behavioral of registerfile at 21( 736) + 0 on 320;
-file . "register_tb.vhd" "fa911b6a8b35f543458f53dc4767dc7d030e74fc" "20200315001241.744":
-  entity t_registerfile at 1( 0) + 0 on 321;
-  architecture behavior of t_registerfile at 8( 116) + 0 on 322;
