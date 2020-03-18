@@ -8,59 +8,64 @@ end t_registerfile;
 architecture behavior of t_registerfile is
     component RegisterFile is
         port (
+            CLK: in STD_LOGIC := '0';
             rd: in STD_LOGIC_VECTOR(11 downto 8) := "0000";
             r1: in STD_LOGIC_VECTOR(7 downto 4) := "0000";
             r2: in STD_LOGIC_VECTOR(3 downto 0) := "0000";
             cRegWrite: in STD_LOGIC := '0';
             cLdi: in STD_LOGIC;
+            cJalr: in STD_LOGIC;
             writeInput: in STD_LOGIC_VECTOR(15 downto 0);
             inr: in STD_LOGIC_VECTOR(3 downto 0); -- Debugging
             outr1toOffsetMux: out STD_LOGIC_VECTOR(15 downto 0);
             outr2toALU: out STD_LOGIC_VECTOR(15 downto 0);
             toMemory: out STD_LOGIC_VECTOR(15 downto 0) := "0000000000000000";
             outvalue: out STD_LOGIC_VECTOR(15 downto 0); -- Debugging
-            PCtoInstruction: out STD_LOGIC_VECTOR(15 downto 0);
-            PCtoAdders: out STD_LOGIC_VECTOR(15 downto 0);
+            PCoutput: out STD_LOGIC_VECTOR(15 downto 0);
             PCinput: in STD_LOGIC_VECTOR(15 downto 0);
             reset: in STD_LOGIC := '1'
         );
     end component RegisterFile;
 
+    constant CLK_period: time := 1000 ns;
+    signal CLK_t: STD_LOGIC := '0';
     signal rd_t: STD_LOGIC_VECTOR(11 downto 8) := "0000";
     signal r1_t: STD_LOGIC_VECTOR(7 downto 4) := "0000";
     signal r2_t: STD_LOGIC_VECTOR(3 downto 0) := "0000";
     signal cRegWrite_t: STD_LOGIC := '0';
     signal cLdi_t: STD_LOGIC := '0';
+    signal cJalr_t: STD_LOGIC := '0';
     signal writeInput_t: STD_LOGIC_VECTOR(15 downto 0) := "0000000000000000";
     signal inr_t: STD_LOGIC_VECTOR(3 downto 0) := "0000"; -- Debugging
     signal outr1toOffsetMux_t: STD_LOGIC_VECTOR(15 downto 0) := "0000000000000000";
     signal outr2toALU_t: STD_LOGIC_VECTOR(15 downto 0) := "0000000000000000";
     signal toMemory_t: STD_LOGIC_VECTOR(15 downto 0) := "0000000000000000";
     signal outvalue_t: STD_LOGIC_VECTOR(15 downto 0) := "0000000000000000"; -- Debugging
-    signal PCtoInstruction_t: STD_LOGIC_VECTOR(15 downto 0);
-    signal PCtoAdders_t: STD_LOGIC_VECTOR(15 downto 0);
-    signal PCinput_t: STD_LOGIC_VECTOR(15 downto 0);
+    signal PCoutput_t: STD_LOGIC_VECTOR(15 downto 0);
+    signal PCinput_t: STD_LOGIC_VECTOR(15 downto 0) := "0000000000000000";
     signal reset_t: STD_LOGIC := '1';
 
     begin
         rf: RegisterFile
         port map(
+            CLK => CLK_t,
             rd => rd_t,
             r1 => r1_t,
             r2 => r2_t,
             cRegWrite => cRegWrite_t,
             cLdi => cLdi_t,
+            cJalr => cJalr_t,
             writeInput => writeInput_t,
             inr => inr_t,
             outr1toOffsetMux => outr1toOffsetMux_t,
             outr2toALU => outr2toALU_t,
             toMemory => toMemory_t,
             outvalue => outvalue_t,
-            PCtoInstruction => PCtoInstruction_t,
-            PCtoAdders => PCtoAdders_t,
+            PCoutput => PCoutput_t,
             PCinput => PCinput_t,
             reset => reset_t
         );
+        CLK_t <= not CLK_t after CLK_period / 2;
         process
             begin
                 -- Test reset
@@ -68,6 +73,10 @@ architecture behavior of t_registerfile is
                 wait for 1 ms;
                 reset_t <= '0';
                 assert outvalue_t = "0000000000000000";
+
+                -- Test incrementing PC
+                PCinput_t <= STD_LOGIC_VECTOR(unsigned(PCinput_t) + 1);
+
 
                 -- Test writing to a register
                 rd_t <= "0100"; -- register 4
@@ -105,9 +114,18 @@ architecture behavior of t_registerfile is
                 r2_t <= "0101";
                 wait for 1 ms;
                 assert outr2toALU_t = "0000000000000111";
-                
+                wait for 1 ms;
+
+                -- Test jalr storage
+                cJalr_t <= '1';
+                writeInput_t <= "1010101010101010";
+                wait for 1 ms;
+                cJalr_t <= '0';
+                r2_t <= "1010"; -- Register x10
+                wait for 1 ms;
+                assert outr2toALU_t = "1010101010101010";
+
                 report "DONE";
-                wait for 10000 ms;
         end process;
 
 end behavior;
