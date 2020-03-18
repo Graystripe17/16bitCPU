@@ -45,12 +45,123 @@ architecture behavior of t_alu is
                 reset_t <= '0';
                 assert outToMemory_t = "0000000000";
                 assert outToRegMux_t = "0000000000000000";
+                wait for 1 ms;
 
                 -- Test writing to ld
-                ALUOp_t <= "0000";
+                ALUOp_t <= "0001";
                 -- Only last 10 bits make address
                 A_t <= "0000001000000000";
-                assert outToRegMux_t <= "0000000000000000";
+                wait for 1 ms;
+                assert outToRegMux_t = "0000000000000000";
+                wait for 1 ms;
+
+                -- Test sd
+                ALUOp_t <= "0011";
+                B_t <= "0000000000001111";
+                wait for 1 ms;
+                assert outToMemory_t = "0000001111";
+                wait for 1 ms;
+
+                -- Test mv
+                ALUOp_t <= "0100";
+                A_t <= "0000000000010000";
+                wait for 1 ms;
+                assert outToMemory_t = "0000000000";
+                wait for 1 ms;
+
+                -- Test add
+                ALUOp_t <= "0101";
+                A_t <= "0000000000000101";
+                B_t <= "0000000000001010";
+                wait for 1 ms;
+                assert outToRegMux_t = "0000000000001111";
+                wait for 1 ms;
+
+                -- Test sub
+                ALUOp_t <= "0110";
+                A_t <= "0000000000000101";
+                B_t <= "0000000000001010";
+                wait for 1 ms;
+                assert outToRegMux_t = "1111111111111011";
+                wait for 1 ms;
+
+                -- Test sll
+                ALUOp_t <= "0111";
+                A_t <= "1010101010101010";
+                B_t <= "0000000000000001";
+                wait for 1 ms;
+                assert outToRegMux_t = "0101010101010100";
+                wait for 1 ms;
+
+                -- Test srl
+                ALUOp_t <= "1000";
+                A_t <= "1010101010101010";
+                B_t <= "0000000000000001";
+                wait for 1 ms;
+                assert outToRegMux_t = "1101010101010101"; -- Pad with 1
+                wait for 1 ms;
+                
+                -- Test and
+                ALUOp_t <= "1001";
+                A_t <= "0000000010101111";
+                B_t <= "0000000001101111";
+                wait for 1 ms;
+                assert outToRegMux_t = "0000000000101111";
+                wait for 1 ms;
+
+                -- Test or
+                ALUOp_t <= "1010";
+                A_t <= "0000000010101111";
+                B_t <= "0000000001101111";
+                wait for 1 ms;
+                assert outToRegMux_t = "0000000011101111";
+                wait for 1 ms;
+
+                -- Test beq
+                ALUOp_t <= "1011";
+                A_t <= "0000000010101111";
+                B_t <= "0000000010101111";
+                wait for 1 ms;
+                assert isBranch_t = '1';
+                wait for 1 ms;
+
+                -- Test beq
+                ALUOp_t <= "1011";
+                A_t <= "0000000010101111";
+                B_t <= "0000000010101111";
+                wait for 1 ms;
+                assert isBranch_t = '1';
+                wait for 1 ms;
+
+                -- Test blt
+                ALUOp_t <= "1100";
+                wait for 1 ms;
+                assert isBranch_t = '0';
+                wait for 1 ms;
+
+                -- Test bge
+                ALUOp_t <= "1101";
+                wait for 1 ms;
+                assert isBranch_t = '1';
+                wait for 1 ms;
+                
+                -- Test jal
+                ALUOp_t <= "1110";
+                A_t <= "1111111111111111";
+                wait for 1 ms;
+                assert outToRegMux_t = "0000000000000000";
+                assert isBranch_t = '1';
+                wait for 1 ms;
+
+                -- Test jalr
+                ALUOp_t <= "1111";
+                A_t <= "1111111111111111";
+                wait for 1 ms;
+                assert outToRegMux_t = "1111111111111111";
+                assert isBranch_t = '1';
+                wait for 1 ms;
+
+                report "Test complete";
         end process;
 
 

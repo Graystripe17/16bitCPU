@@ -45,10 +45,10 @@ begin
                         outToRegMux <= "0000000000000000";
                     when "0100" => -- mv
                         -- Pass contents of r1 to outToRegMux
-                        outToRegMux <= "A";
+                        outToRegMux <= A;
                         -- Reset outputs
                         isBranch <= '0';
-                        outToRegMux <= "0000000000000000";
+                        outToMemory <= "0000000000";
                     when "0101" => -- add
                         outToRegMux <= STD_LOGIC_VECTOR(signed(A) + signed(B));
                         -- Reset outputs
@@ -113,8 +113,8 @@ begin
                         outToMemory <= "0000000000";
                     when others =>
                         -- Do nothing
+                        report "Invalid opcode";
                 end case;
-                report "reset off";
             end if;
 
     end process;
