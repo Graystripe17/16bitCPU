@@ -108,6 +108,12 @@ architecture behavior of t_alu is
                 wait for 1 ms;
                 assert outToRegMux_t = "0000000000101111";
                 wait for 1 ms;
+                -- Test overflow
+                A_t <= "1111111111111100";
+                B_t <= "1111111111111101";
+                wait for 1 ms;
+                assert outToRegMux_t = "1111111111111100";
+                wait for 1 ms;
 
                 -- Test or
                 ALUOp_t <= "1010";
