@@ -1,0 +1,93 @@
+$date
+  Sat Mar 28 17:36:23 2020
+$end
+$version
+  GHDL v0
+$end
+$timescale
+  1 fs
+$end
+$scope module standard $end
+$upscope $end
+$scope module std_logic_1164 $end
+$upscope $end
+$scope module top $end
+$var reg 1 ! clk $end
+$var reg 4 " inr[3:0] $end
+$var reg 16 # outvalue[15:0] $end
+$var reg 1 $ reset $end
+$var reg 1 % reset_t $end
+$var reg 4 & inr_t[3:0] $end
+$var reg 16 ' outvalue_t[15:0] $end
+$var reg 1 ( clk_t $end
+$var reg 16 ) instruction_t[15:0] $end
+$var reg 1 * cregwrite_t $end
+$var reg 1 + cldi_t $end
+$var reg 1 , cjalr_t $end
+$var reg 16 - writeinput_t[15:0] $end
+$var reg 16 . pcinput_t[15:0] $end
+$var reg 16 / r1tooffsetmux_t[15:0] $end
+$var reg 16 0 registertomemory_t[15:0] $end
+$var reg 16 1 pcoutput_t[15:0] $end
+$var reg 4 2 caluop_t[3:0] $end
+$var reg 16 3 a_t[15:0] $end
+$var reg 16 4 b_t[15:0] $end
+$var reg 1 5 isbranch_t $end
+$var reg 10 6 alutomemory_t[9:0] $end
+$var reg 16 7 alutoregmux_t[15:0] $end
+$var reg 16 8 memoryout_t[15:0] $end
+$var reg 16 9 signextension_t[15:0] $end
+$var reg 16 : branchadderoutput_t[15:0] $end
+$var reg 16 ; incrementadderoutput_t[15:0] $end
+$var reg 1 < coffset_t $end
+$var reg 1 = cmemtoreg_t $end
+$var reg 1 > carry_t $end
+$scope module rf $end
+$upscope $end
+$scope module arithmetic $end
+$upscope $end
+$scope module sign $end
+$upscope $end
+$scope module incrementadder $end
+$upscope $end
+$scope module branchadder $end
+$upscope $end
+$scope module offsetmux $end
+$upscope $end
+$scope module pcmux $end
+$upscope $end
+$scope module instruction $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+U!
+bUUUU "
+bUUUUUUUUUUUUUUUU #
+U$
+U%
+bUUUU &
+bUUUUUUUUUUUUUUUU '
+U(
+bUUUUUUUUUUUUUUUU )
+U*
+U+
+U,
+bUUUUUUUUUUUUUUUU -
+bUUUUUUUUUUUUUUUU .
+bUUUUUUUUUUUUUUUU /
+b0000000000000000 0
+bUUUUUUUUUUUUUUUU 1
+b0000 2
+bUUUUUUUUUUUUUUUU 3
+b0000000000000000 4
+05
+b0000000000 6
+b0000000000000000 7
+bUUUUUUUUUUUUUUUU 8
+bUUUUUUUUUUUUUUUU 9
+bUUUUUUUUUUUUUUUU :
+bUUUUUUUUUUUUUUUU ;
+U<
+U=
+U>

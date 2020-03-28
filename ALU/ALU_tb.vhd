@@ -131,14 +131,6 @@ architecture behavior of t_alu is
                 assert isBranch_t = '1';
                 wait for 1 ms;
 
-                -- Test beq
-                ALUOp_t <= "1011";
-                A_t <= "0000000010101111";
-                B_t <= "0000000010101111";
-                wait for 1 ms;
-                assert isBranch_t = '1';
-                wait for 1 ms;
-
                 -- Test blt
                 ALUOp_t <= "1100";
                 wait for 1 ms;
