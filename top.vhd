@@ -23,6 +23,7 @@ architecture Behavioral of Top is
             writeInput: in STD_LOGIC_VECTOR(15 downto 0);
             inr: in STD_LOGIC_VECTOR(3 downto 0);
             outr1toOffsetMux: out STD_LOGIC_VECTOR(15 downto 0);
+            outr2toALU: out STD_LOGIC_VECTOR(15 downto 0);
             toMemory: out STD_LOGIC_VECTOR(15 downto 0) := "0000000000000000";
             outvalue: out STD_LOGIC_VECTOR(15 downto 0);
             PCoutput: out STD_LOGIC_VECTOR(15 downto 0);
@@ -112,6 +113,7 @@ architecture Behavioral of Top is
     signal PCinput_t: STD_LOGIC_VECTOR(15 downto 0);
     -- RegisterFile out
     signal r1toOffsetMux_t: STD_LOGIC_VECTOR(15 downto 0);
+    signal r2toALU_t: STD_LOGIC_VECTOR(15 downto 0);
     signal registerToMemory_t: STD_LOGIC_VECTOR(15 downto 0);
     signal PCoutput_t: STD_LOGIC_VECTOR(15 downto 0);
 
@@ -154,6 +156,7 @@ architecture Behavioral of Top is
             writeInput => writeInput_t,
             inr => inr_t,
             outr1toOffsetMux => r1toOffsetMux_t,
+            outr2toALU => r2toALU_t,
             toMemory => registerToMemory_t,
             outvalue => memoryOut_t,
             PCoutput => PCoutput_t,
