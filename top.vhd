@@ -147,6 +147,8 @@ architecture Behavioral of top is
     -- ControlUnit out
     signal cOffset_t: STD_LOGIC;
     signal cMemToReg_t: STD_LOGIC;
+    signal cMemWrite_t: STD_LOGIC;
+    signal cMemRead_t: STD_LOGIC;
 
     -- Dummy Cout
     signal carry_t: STD_LOGIC;
@@ -179,6 +181,19 @@ begin
         isBranch => isBranch_t,
         outToMemory => ALUToMemory_t,
         outToRegMux => ALUToRegMux_t,
+        reset => reset_t
+    );
+
+    control: ControlUnit
+    port map (
+        opcode => instruction_t(15 downto 12),
+        cRegWrite => cRegWrite_t,
+        cOffset => cOffset_t,
+        cALUOp => cALUOp_t,
+        cMemWrite => cMemWrite_t,
+        cMemRead => cMemRead_t,
+        cMemToReg => cMemToReg_t,
+        cLdi => cLdi_t,
         reset => reset_t
     );
 
