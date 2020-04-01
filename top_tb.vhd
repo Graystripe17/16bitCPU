@@ -250,7 +250,8 @@ architecture Behavioral of t_top is
             instructionWriteData_t <= "0001011001110000";
 
             wait for CLK_period;
-            assert instruction_t <= "0001011001110000";
+            assert instruction_t = "0001011001110000";
+            assert instruction_t = "XXXXXXXXXXXXXXXX";
 
             -- ldi x6, 3
             -- Opcode rd x6  constant
@@ -277,7 +278,7 @@ architecture Behavioral of t_top is
             wait for 1 ms;
 
             -- EXECUTE
-            PCinput_t <= "0000000000000101";
+            PCinput_t <= "0000000000000001";
             instructionWriteEnable_t <= '0';
              
             
