@@ -16,7 +16,6 @@ architecture behavior of t_registerfile is
             cLdi: in STD_LOGIC;
             cJalr: in STD_LOGIC;
             writeInput: in STD_LOGIC_VECTOR(15 downto 0);
-            inr: in STD_LOGIC_VECTOR(3 downto 0); -- Debugging
             outr1toOffsetMux: out STD_LOGIC_VECTOR(15 downto 0);
             outr2toALU: out STD_LOGIC_VECTOR(15 downto 0);
             toMemory: out STD_LOGIC_VECTOR(15 downto 0) := "0000000000000000";
@@ -36,7 +35,6 @@ architecture behavior of t_registerfile is
     signal cLdi_t: STD_LOGIC := '0';
     signal cJalr_t: STD_LOGIC := '0';
     signal writeInput_t: STD_LOGIC_VECTOR(15 downto 0) := "0000000000000000";
-    signal inr_t: STD_LOGIC_VECTOR(3 downto 0) := "0000"; -- Debugging
     signal outr1toOffsetMux_t: STD_LOGIC_VECTOR(15 downto 0) := "0000000000000000";
     signal outr2toALU_t: STD_LOGIC_VECTOR(15 downto 0) := "0000000000000000";
     signal toMemory_t: STD_LOGIC_VECTOR(15 downto 0) := "0000000000000000";
@@ -56,7 +54,6 @@ architecture behavior of t_registerfile is
             cLdi => cLdi_t,
             cJalr => cJalr_t,
             writeInput => writeInput_t,
-            inr => inr_t,
             outr1toOffsetMux => outr1toOffsetMux_t,
             outr2toALU => outr2toALU_t,
             toMemory => toMemory_t,

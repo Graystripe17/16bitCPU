@@ -14,7 +14,6 @@ entity RegisterFile is
         cLdi: in STD_LOGIC;
         cJalr: in STD_LOGIC;
         writeInput: in STD_LOGIC_VECTOR(15 downto 0);
-        inr: in STD_LOGIC_VECTOR(3 downto 0); -- Debugging
         outr1toOffsetMux: out STD_LOGIC_VECTOR(15 downto 0);
         outr2toALU: out STD_LOGIC_VECTOR(15 downto 0);
         toMemory: out STD_LOGIC_VECTOR(15 downto 0) := "0000000000000000";
