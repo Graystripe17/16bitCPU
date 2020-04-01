@@ -5,6 +5,8 @@ use IEEE.numeric_std.all;
 entity InstructionMemory is
     port (
         PC: in STD_LOGIC_VECTOR(15 downto 0);
+        writeEnable: in STD_LOGIC;
+        writeData: in STD_LOGIC_VECTOR(15 downto 0);
         outInstruction: out STD_LOGIC_VECTOR(15 downto 0);
         reset: in STD_LOGIC := '0'
     );
@@ -16,13 +18,17 @@ architecture Behavioral of InstructionMemory is
     signal instruction65536: mem := (others => "0000000000000000");
 begin
     -- Main block
-    process (reset, PC)
+    process (reset, PC, writeEnable)
     begin
         if (reset = '1') then
             instruction65536 <= (others => "0000000000000000");
             outInstruction <= "0000000000000000";
         else
-            outInstruction <= instruction65536(to_integer(unsigned(PC)));
+            if (writeEnable = '1') then
+                instruction65536(to_integer(unsigned(PC))) <= writeData;
+            else
+                outInstruction <= instruction65536(to_integer(unsigned(PC)));
+            end if;
         end if;
         
     end process;

@@ -1,5 +1,5 @@
 $date
-  Sat Mar 28 17:36:23 2020
+  Sun Mar 29 10:19:46 2020
 $end
 $version
   GHDL v0
@@ -27,21 +27,22 @@ $var reg 1 , cjalr_t $end
 $var reg 16 - writeinput_t[15:0] $end
 $var reg 16 . pcinput_t[15:0] $end
 $var reg 16 / r1tooffsetmux_t[15:0] $end
-$var reg 16 0 registertomemory_t[15:0] $end
-$var reg 16 1 pcoutput_t[15:0] $end
-$var reg 4 2 caluop_t[3:0] $end
-$var reg 16 3 a_t[15:0] $end
-$var reg 16 4 b_t[15:0] $end
-$var reg 1 5 isbranch_t $end
-$var reg 10 6 alutomemory_t[9:0] $end
-$var reg 16 7 alutoregmux_t[15:0] $end
-$var reg 16 8 memoryout_t[15:0] $end
-$var reg 16 9 signextension_t[15:0] $end
-$var reg 16 : branchadderoutput_t[15:0] $end
-$var reg 16 ; incrementadderoutput_t[15:0] $end
-$var reg 1 < coffset_t $end
-$var reg 1 = cmemtoreg_t $end
-$var reg 1 > carry_t $end
+$var reg 16 0 r2toalu_t[15:0] $end
+$var reg 16 1 registertomemory_t[15:0] $end
+$var reg 16 2 pcoutput_t[15:0] $end
+$var reg 4 3 caluop_t[3:0] $end
+$var reg 16 4 a_t[15:0] $end
+$var reg 16 5 b_t[15:0] $end
+$var reg 1 6 isbranch_t $end
+$var reg 10 7 alutomemory_t[9:0] $end
+$var reg 16 8 alutoregmux_t[15:0] $end
+$var reg 16 9 memoryout_t[15:0] $end
+$var reg 16 : signextension_t[15:0] $end
+$var reg 16 ; branchadderoutput_t[15:0] $end
+$var reg 16 < incrementadderoutput_t[15:0] $end
+$var reg 1 = coffset_t $end
+$var reg 1 > cmemtoreg_t $end
+$var reg 1 ? carry_t $end
 $scope module rf $end
 $upscope $end
 $scope module arithmetic $end
@@ -76,18 +77,19 @@ U,
 bUUUUUUUUUUUUUUUU -
 bUUUUUUUUUUUUUUUU .
 bUUUUUUUUUUUUUUUU /
-b0000000000000000 0
-bUUUUUUUUUUUUUUUU 1
-b0000 2
-bUUUUUUUUUUUUUUUU 3
-b0000000000000000 4
-05
-b0000000000 6
-b0000000000000000 7
-bUUUUUUUUUUUUUUUU 8
+bUUUUUUUUUUUUUUUU 0
+b0000000000000000 1
+bUUUUUUUUUUUUUUUU 2
+b0000 3
+bUUUUUUUUUUUUUUUU 4
+b0000000000000000 5
+06
+b0000000000 7
+b0000000000000000 8
 bUUUUUUUUUUUUUUUU 9
 bUUUUUUUUUUUUUUUU :
 bUUUUUUUUUUUUUUUU ;
-U<
+bUUUUUUUUUUUUUUUU <
 U=
 U>
+U?
