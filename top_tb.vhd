@@ -83,6 +83,8 @@ architecture Behavioral of t_top is
     component InstructionMemory is
         port (
             PC: in STD_LOGIC_VECTOR(15 downto 0);
+            writeEnable: in STD_LOGIC;
+            writeData: in STD_LOGIC_VECTOR(15 downto 0);
             outInstruction: out STD_LOGIC_VECTOR(15 downto 0);
             reset: in STD_LOGIC := '0'
         );
@@ -100,13 +102,12 @@ architecture Behavioral of t_top is
 
     -- Global
     constant CLK_period: time := 1000 ns;
-    signal CLK_t: STD_LOGIC L= '0';
+    signal CLK_t: STD_LOGIC := '0';
     signal reset_t: STD_LOGIC;
     signal inr_t: STD_LOGIC_VECTOR(3 downto 0);
     signal outvalue_t: STD_LOGIC_VECTOR(15 downto 0);
 
     -- RegisterFile in
-    signal CLK_t: STD_LOGIC;
     signal instruction_t: STD_LOGIC_VECTOR(15 downto 0);
     signal cRegWrite_t: STD_LOGIC;
     signal cLdi_t : STD_LOGIC;
@@ -130,6 +131,10 @@ architecture Behavioral of t_top is
     
     -- Memory out
     signal memoryOut_t: STD_LOGIC_VECTOR(15 downto 0);
+
+    -- Instruction Memory Write
+    signal instructionWriteEnable_t: STD_LOGIC;
+    signal instructionWriteData_t: STD_LOGIC_VECTOR(15 downto 0);
 
     -- SignExtension out
     signal signExtension_t: STD_LOGIC_VECTOR(15 downto 0);
@@ -223,35 +228,60 @@ architecture Behavioral of t_top is
         instruction: InstructionMemory
         port map (
             PC => PCinput_t,
+            writeEnable => instructionWriteEnable_t,
+            writeData => instructionWriteData_t,
             outInstruction => instruction_t,
             reset => reset_t
         );
 
         CLK_t <= not CLK_t after CLK_period / 2;
 
-        main: process(CLK_t)
+        main: process
         begin
-            if (rising_edge(CLK_t)) then
-                -- First instruction: ld
-                -- Opcode rd x6  r1 x7  filler
-                -- 0001   0110   0111   0000
-                instruction_t <= "0001011001110000";
+        
+            -- LOAD
 
-                -- ldi x6, 3
-                -- Opcode rd x6  constant
-                -- 0010   0110   00000011
-                instruction_t <= "0010011000000011";
+            instructionWriteEnable_t <= '1';
 
-                -- ldi x7, 5
-                -- Opcode rd x7  constant
-                -- 0010   0111   00000111
-                instruction_t <= "0010011100000111";
+            -- First instruction: ld
+            -- Opcode rd x6  r1 x7  filler
+            -- 0001   0110   0111   0000
+            PCinput_t <= "0000000000000001";
+            instructionWriteData_t <= "0001011001110000";
 
-                
-                
-            end if;
-            report "HELLO";
+            wait for CLK_period;
+            assert instruction_t <= "0001011001110000";
+
+            -- ldi x6, 3
+            -- Opcode rd x6  constant
+            -- 0010   0110   00000011
+            PCinput_t <= "0000000000000010";
+            instructionWriteData_t <= "0010011000000011";
+
+            wait for CLK_period;
+
+            -- ldi x7, 5
+            -- Opcode rd x7  constant
+            -- 0010   0111   00000111
+            PCinput_t <= "0000000000000011";
+            instructionWriteData_t <= "0010011100000111";
+            
+            wait for CLK_period;
+
+            -- mv x6, x8
+            -- Opcode rd x6  r1 x8  filler
+            -- 0100   0110   1000   0000
+            PCinput_t <= "0000000000000100";
+            instructionWriteData_t <= "0100011010000000";
+
+            wait for 1 ms;
+
+            -- EXECUTE
+            PCinput_t <= "0000000000000101";
+            instructionWriteEnable_t <= '0';
+             
+            
+            report "Test Finished";
         end process main;
         
-
 end Behavioral;
