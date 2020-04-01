@@ -30,6 +30,5 @@ architecture Behavioral of Adder is
             begin
                 sum <= result(N-1 downto 0);
                 Cout <= result(N);
-                report "nupy";
         end process;
 end Behavioral;
