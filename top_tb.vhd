@@ -9,10 +9,6 @@ architecture Behavioral of t_top is
     component top
         port (
             CLK: in STD_LOGIC;
-            instructionWriteEnable: in STD_LOGIC;
-            instructionWriteAddr: in STD_LOGIC_VECTOR(15 downto 0);
-            instructionWriteData: in STD_LOGIC_VECTOR(15 downto 0);
-            startPC: in STD_LOGIC_VECTOR(15 downto 0);
             instructionOut: out STD_LOGIC_VECTOR(15 downto 0); -- Debug
             inr: in STD_LOGIC_VECTOR(3 downto 0); -- Debug rf
             outr: out STD_LOGIC_VECTOR(15 downto 0); -- Debug rf
@@ -24,10 +20,6 @@ architecture Behavioral of t_top is
 
     signal CLK_t: STD_LOGIC;
     signal reset_t: STD_LOGIC;
-    signal instructionWriteEnable_t: STD_LOGIC;
-    signal instructionWriteAddr_t: STD_LOGIC_VECTOR(15 downto 0);
-    signal instructionWriteData_t: STD_LOGIC_VECTOR(15 downto 0);
-    signal startPC_t: STD_LOGIC_VECTOR(15 downto 0);
     signal instructionOut_t: STD_LOGIC_VECTOR(15 downto 0);
     signal inr_t: STD_LOGIC_VECTOR(3 downto 0);
     signal outr_t: STD_LOGIC_VECTOR(15 downto 0);
@@ -36,17 +28,13 @@ architecture Behavioral of t_top is
         test: top
         port map (
             CLK => CLK_t,
-            instructionWriteEnable => instructionWriteEnable_t,
-            instructionWriteAddr => instructionWriteAddr_t,
-            instructionWriteData => instructionWriteData_t,
-            startPC => startPC_t,
             instructionOut => instructionOut_t,
             inr => inr_t,
             outr => outr_t,
             reset => reset_t
         );
 
-        -- CLK_t <= not CLK_t after CLK_period / 2;
+        --CLK_t <= not CLK_t after CLK_period / 2;
 
         clk_process: process
         begin
@@ -54,6 +42,7 @@ architecture Behavioral of t_top is
             wait for CLK_period / 2;
             CLK_t <= '1';
             wait for CLK_period / 2;
+            report "HI";
         end process;
 
         main: process
@@ -61,8 +50,10 @@ architecture Behavioral of t_top is
             report "MAIN";
             reset_t <= '1';
             wait for CLK_period;
+            report ("HA");
             reset_t <= '0';
-            startPC_t <= "0000000000000000";
+            wait for CLK_period;
+            report ("WHA");
 
             -- LOAD
 -- 
@@ -177,18 +168,6 @@ architecture Behavioral of t_top is
 --             inr_t <= "1001";
 --             wait for CLK_period * 50;
 --             report "Execution complete";
-                for A in 0 to 15 loop
-                    inr_t <= STD_LOGIC_VECTOR(to_unsigned(A, 4));
-                    wait for 10 ns;
-                end loop;
-                for A in 0 to 15 loop
-                    inr_t <= STD_LOGIC_VECTOR(to_unsigned(A, 4));
-                    wait for 10 ns;
-                end loop;
-                for A in 0 to 15 loop
-                    inr_t <= STD_LOGIC_VECTOR(to_unsigned(A, 4));
-                    wait for 10 ns;
-                end loop;
                 for A in 0 to 15 loop
                     inr_t <= STD_LOGIC_VECTOR(to_unsigned(A, 4));
                     wait for 10 ns;

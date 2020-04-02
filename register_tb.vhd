@@ -19,8 +19,6 @@ architecture behavior of t_registerfile is
             outr1toOffsetMux: out STD_LOGIC_VECTOR(15 downto 0);
             outr2toALU: out STD_LOGIC_VECTOR(15 downto 0);
             toMemory: out STD_LOGIC_VECTOR(15 downto 0) := "0000000000000000";
-            PCoutput: out STD_LOGIC_VECTOR(15 downto 0);
-            PCinput: in STD_LOGIC_VECTOR(15 downto 0);
             inr: in STD_LOGIC_VECTOR(3 downto 0);
             outr: out STD_LOGIC_VECTOR(15 downto 0);
             reset: in STD_LOGIC := '1'
@@ -40,8 +38,6 @@ architecture behavior of t_registerfile is
     signal outr2toALU_t: STD_LOGIC_VECTOR(15 downto 0) := "0000000000000000";
     signal toMemory_t: STD_LOGIC_VECTOR(15 downto 0) := "0000000000000000";
     signal outvalue_t: STD_LOGIC_VECTOR(15 downto 0) := "0000000000000000"; -- Debugging
-    signal PCoutput_t: STD_LOGIC_VECTOR(15 downto 0);
-    signal PCinput_t: STD_LOGIC_VECTOR(15 downto 0) := "0000000000000000";
     signal inr_t: STD_LOGIC_VECTOR(3 downto 0);
     signal outr_t: STD_LOGIC_VECTOR(15 downto 0);
     signal reset_t: STD_LOGIC := '1';
@@ -60,8 +56,6 @@ architecture behavior of t_registerfile is
             outr1toOffsetMux => outr1toOffsetMux_t,
             outr2toALU => outr2toALU_t,
             toMemory => toMemory_t,
-            PCoutput => PCoutput_t,
-            PCinput => PCinput_t,
             inr => inr_t,
             outr => outr_t,
             reset => reset_t
@@ -73,9 +67,6 @@ architecture behavior of t_registerfile is
                 reset_t <= '1';
                 wait for 1 ms;
                 reset_t <= '0';
-
-                -- Test incrementing PC
-                PCinput_t <= STD_LOGIC_VECTOR(unsigned(PCinput_t) + 1);
 
                 -- Test writing to a register
                 rd_t <= "0100"; -- register 4

@@ -5,10 +5,6 @@ use IEEE.numeric_std.all;
 entity top is
     port (
         CLK: in STD_LOGIC;
-        instructionWriteEnable: in STD_LOGIC;
-        instructionWriteAddr: in STD_LOGIC_VECTOR(15 downto 0);
-        instructionWriteData: in STD_LOGIC_VECTOR(15 downto 0);
-        startPC: in STD_LOGIC_VECTOR(15 downto 0);
         instructionOut: out STD_LOGIC_VECTOR(15 downto 0);
         inr: in STD_LOGIC_VECTOR(3 downto 0);
         outr: out STD_LOGIC_VECTOR(15 downto 0);
@@ -30,11 +26,9 @@ architecture Behavioral of top is
             outr1toOffsetMux: out STD_LOGIC_VECTOR(15 downto 0);
             outr2toALU: out STD_LOGIC_VECTOR(15 downto 0);
             toMemory: out STD_LOGIC_VECTOR(15 downto 0) := "0000000000000000";
-            PCoutput: out STD_LOGIC_VECTOR(15 downto 0);
-            PCinput: in STD_LOGIC_VECTOR(15 downto 0) := "0000000000000000";
             inr: in STD_LOGIC_VECTOR(3 downto 0);
             outr: out STD_LOGIC_VECTOR(15 downto 0);
-            reset: in STD_LOGIC := '1'
+            reset: in STD_LOGIC
          );
     end component;
     component ALU is
@@ -46,7 +40,7 @@ architecture Behavioral of top is
             isBranch: out STD_LOGIC := '0';
             outToMemory: out STD_LOGIC_VECTOR(9 downto 0) := "0000000000";
             outToRegMux: out STD_LOGIC_VECTOR(15 downto 0) := "0000000000000000";
-            reset: in STD_LOGIC := '1'
+            reset: in STD_LOGIC
         );
     end component;
     component ControlUnit is
@@ -92,8 +86,6 @@ architecture Behavioral of top is
         port (
             CLK: in STD_LOGIC;
             PC: in STD_LOGIC_VECTOR(15 downto 0);
-            writeEnable: in STD_LOGIC;
-            writeData: in STD_LOGIC_VECTOR(15 downto 0);
             outInstruction: out STD_LOGIC_VECTOR(15 downto 0);
             reset: in STD_LOGIC := '0'
         );
@@ -114,9 +106,7 @@ architecture Behavioral of top is
     signal reset_t: STD_LOGIC;
 
     -- Instruction Memory Write
-    signal instructionWriteEnable_t: STD_LOGIC;
-    signal instructionWriteAddr_t: STD_LOGIC_VECTOR(15 downto 0);
-    signal instructionWriteData_t: STD_LOGIC_VECTOR(15 downto 0);
+    signal PC_t: STD_LOGIC_VECTOR(15 downto 0);
 
     -- Debug
     signal inr_t: STD_LOGIC_VECTOR(3 downto 0);
@@ -128,11 +118,9 @@ architecture Behavioral of top is
     signal cLdi_t : STD_LOGIC;
     signal cJalr_t: STD_LOGIC;
     signal writeInput_t: STD_LOGIC_VECTOR(15 downto 0);
-    signal PCinput_t: STD_LOGIC_VECTOR(15 downto 0) := "0000000000000000";
     -- RegisterFile out
     signal r1toOffsetMux_t: STD_LOGIC_VECTOR(15 downto 0);
     signal registerToMemory_t: STD_LOGIC_VECTOR(15 downto 0);
-    signal PCoutput_t: STD_LOGIC_VECTOR(15 downto 0);
 
     -- ALU in
     signal cALUOp_t: STD_LOGIC_VECTOR(3 downto 0) := "0000";
@@ -176,8 +164,6 @@ begin
         outr1toOffsetMux => r1toOffsetMux_t,
         outr2toALU => B_t,
         toMemory => registerToMemory_t,
-        PCoutput => PCoutput_t,
-        PCinput => PCinput_t,
         inr => inr_t,
         outr => outr_t,
         reset => reset_t
@@ -220,7 +206,7 @@ begin
     generic map (N => 16)
     port map (
         A => "0000000000000001",
-        B => PCoutput_t,
+        B => PC_t,
         sum => incrementAdderOutput_t,
         Cout => carry_t,
         reset => reset_t
@@ -229,7 +215,7 @@ begin
     branchAdder: Adder
     generic map (N => 16)
     port map (
-        A => PCoutput_t,
+        A => PC_t,
         B => signExtension_t,
         sum => branchAdderOutput_t,
         Cout => carry_t,
@@ -249,7 +235,7 @@ begin
         a1 => incrementAdderOutput_t,
         a2 => branchAdderOutput_t,
         sel => isBranch_t, -- Branch under 2 conditions
-        b => PCinput_t
+        b => PC_t
     );
 
     regMux: Mux2
@@ -263,9 +249,7 @@ begin
     instruction: InstructionMemory
     port map (
         CLK => CLK_t,
-        PC => PCinput_t,
-        writeEnable => instructionWriteEnable_t,
-        writeData => instructionWriteData_t,
+        PC => PC_t,
         outInstruction => instruction_t,
         reset => reset_t
     );
@@ -282,9 +266,6 @@ begin
 
     CLK_t <= CLK;
     reset_t <= reset;
-    instructionWriteEnable_t <= instructionWriteEnable;
-    instructionWriteAddr_t <= instructionWriteAddr;
-    instructionWriteData_t <= instructionWriteData;
     inr_t <= inr;
     outr <= outr_t;
     instructionOut <= instruction_t;
