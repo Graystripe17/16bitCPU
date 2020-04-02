@@ -20,6 +20,8 @@ entity RegisterFile is
         outvalue: out STD_LOGIC_VECTOR(15 downto 0); -- Debugging
         PCoutput: out STD_LOGIC_VECTOR(15 downto 0);
         PCinput: in STD_LOGIC_VECTOR(15 downto 0);
+        inr: in STD_LOGIC_VECTOR(3 downto 0);
+        outr: out STD_LOGIC_VECTOR(15 downto 0);
         reset: in STD_LOGIC := '1'
     );
 end RegisterFile;
@@ -51,17 +53,19 @@ begin
                 toMemory <= "0000000000000000";
                 outvalue <= "0000000000000000";
                 PCoutput <= "0000000000000000";
+                outr <= "0000000000000000";
             else
                 outr1toOffsetMux <= register16(to_integer(unsigned(r1)));
                 outr2toALU <= register16(to_integer(unsigned(r2)));
                 outvalue <= writeInput;
                 toMemory <= register16(to_integer(unsigned(r1))); -- Load or store
                 register16(15) <= PCinput;
-                PCoutput <= register16(15);
-
+                PCoutput <= PCinput;
+                outr <= register16(to_integer(unsigned(inr))); -- Debug
                 if (cLdi = '1') then
                     -- Special instruction ignore MemToReg
                     register16(to_integer(unsigned(rd))) <= "00000000" & r1 & r2;
+                    report "Register: Ldi";
                 else
                     if (cJalr = '1') then
                         -- If JALR flag, write to return register x10

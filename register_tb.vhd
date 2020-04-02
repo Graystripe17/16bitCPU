@@ -22,6 +22,8 @@ architecture behavior of t_registerfile is
             outvalue: out STD_LOGIC_VECTOR(15 downto 0); -- Debugging
             PCoutput: out STD_LOGIC_VECTOR(15 downto 0);
             PCinput: in STD_LOGIC_VECTOR(15 downto 0);
+            inr: in STD_LOGIC_VECTOR(3 downto 0);
+            outr: out STD_LOGIC_VECTOR(15 downto 0);
             reset: in STD_LOGIC := '1'
         );
     end component RegisterFile;
@@ -41,6 +43,8 @@ architecture behavior of t_registerfile is
     signal outvalue_t: STD_LOGIC_VECTOR(15 downto 0) := "0000000000000000"; -- Debugging
     signal PCoutput_t: STD_LOGIC_VECTOR(15 downto 0);
     signal PCinput_t: STD_LOGIC_VECTOR(15 downto 0) := "0000000000000000";
+    signal inr_t: STD_LOGIC_VECTOR(3 downto 0);
+    signal outr_t: STD_LOGIC_VECTOR(15 downto 0);
     signal reset_t: STD_LOGIC := '1';
 
     begin
@@ -60,6 +64,8 @@ architecture behavior of t_registerfile is
             outvalue => outvalue_t,
             PCoutput => PCoutput_t,
             PCinput => PCinput_t,
+            inr => inr_t,
+            outr => outr_t,
             reset => reset_t
         );
         CLK_t <= not CLK_t after CLK_period / 2;
@@ -74,7 +80,6 @@ architecture behavior of t_registerfile is
                 -- Test incrementing PC
                 PCinput_t <= STD_LOGIC_VECTOR(unsigned(PCinput_t) + 1);
 
-
                 -- Test writing to a register
                 rd_t <= "0100"; -- register 4
                 r1_t <= "0101"; -- register 5
@@ -85,6 +90,11 @@ architecture behavior of t_registerfile is
                 cRegWrite_t <= '0';
                 assert outvalue_t = writeInput_t;
                 wait for 5 ms;
+                
+                -- Test debugging
+                inr_t <= "0100";
+                wait for 1 ms;
+                assert outr_t = "0000000000000011";
 
                 -- Test outr1
                 -- Write 3 to register 4

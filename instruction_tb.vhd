@@ -8,6 +8,7 @@ end t_instruction;
 architecture behavior of t_instruction is
     component InstructionMemory is
         port (
+            CLK: in STD_LOGIC;
             PC: in STD_LOGIC_VECTOR(15 downto 0);
             writeEnable: in STD_LOGIC;
             writeData: in STD_LOGIC_VECTOR(15 downto 0);
@@ -16,6 +17,7 @@ architecture behavior of t_instruction is
         );
     end component InstructionMemory;
 
+    signal CLK_t: STD_LOGIC;
     signal PC_t: STD_LOGIC_VECTOR(15 downto 0);
     signal writeEnable_t: STD_LOGIC;
     signal writeData_t: STD_LOGIC_VECTOR(15 downto 0);
@@ -25,6 +27,7 @@ architecture behavior of t_instruction is
     begin
         instruction: InstructionMemory
         port map(
+            CLK => CLK_t,
             PC => PC_t,
             writeEnable => writeEnable_t,
             writeData => writeData_t,

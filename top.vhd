@@ -9,6 +9,8 @@ entity top is
         instructionWriteAddr: in STD_LOGIC_VECTOR(15 downto 0);
         instructionWriteData: in STD_LOGIC_VECTOR(15 downto 0);
         instructionOut: out STD_LOGIC_VECTOR(15 downto 0);
+        inr: in STD_LOGIC_VECTOR(3 downto 0);
+        outr: out STD_LOGIC_VECTOR(15 downto 0);
         reset: in STD_LOGIC
     );
 end top;
@@ -30,6 +32,8 @@ architecture Behavioral of top is
             outvalue: out STD_LOGIC_VECTOR(15 downto 0);
             PCoutput: out STD_LOGIC_VECTOR(15 downto 0);
             PCinput: in STD_LOGIC_VECTOR(15 downto 0);
+            inr: in STD_LOGIC_VECTOR(3 downto 0);
+            outr: out STD_LOGIC_VECTOR(15 downto 0);
             reset: in STD_LOGIC := '1'
          );
     end component;
@@ -54,6 +58,7 @@ architecture Behavioral of top is
             cMemRead: out STD_LOGIC;
             cMemToReg: out STD_LOGIC;
             cLdi: out STD_LOGIC;
+            cJalr: out STD_LOGIC;
             reset: in STD_LOGIC
         );
     end component;
@@ -84,6 +89,7 @@ architecture Behavioral of top is
     end component;
     component InstructionMemory is
         port (
+            CLK: in STD_LOGIC;
             PC: in STD_LOGIC_VECTOR(15 downto 0);
             writeEnable: in STD_LOGIC;
             writeData: in STD_LOGIC_VECTOR(15 downto 0);
@@ -105,12 +111,15 @@ architecture Behavioral of top is
     -- Global
     signal CLK_t: STD_LOGIC := '0';
     signal reset_t: STD_LOGIC;
-    signal outvalue_t: STD_LOGIC_VECTOR(15 downto 0);
 
     -- Instruction Memory Write
     signal instructionWriteEnable_t: STD_LOGIC;
     signal instructionWriteAddr_t: STD_LOGIC_VECTOR(15 downto 0);
     signal instructionWriteData_t: STD_LOGIC_VECTOR(15 downto 0);
+
+    -- Debug
+    signal inr_t: STD_LOGIC_VECTOR(3 downto 0);
+    signal outr_t: STD_LOGIC_VECTOR(15 downto 0);
 
     -- RegisterFile in
     signal instruction_t: STD_LOGIC_VECTOR(15 downto 0);
@@ -135,7 +144,7 @@ architecture Behavioral of top is
     signal ALUToRegMux_t: STD_LOGIC_VECTOR(15 downto 0) := "0000000000000000";
     
     -- Memory out
-    signal memoryOut_t: STD_LOGIC_VECTOR(15 downto 0);
+    signal outMemory_t: STD_LOGIC_VECTOR(15 downto 0);
 
     -- SignExtension out
     signal signExtension_t: STD_LOGIC_VECTOR(15 downto 0);
@@ -167,9 +176,11 @@ begin
         outr1toOffsetMux => r1toOffsetMux_t,
         outr2toALU => r2toALU_t,
         toMemory => registerToMemory_t,
-        outvalue => memoryOut_t,
+        outvalue => outMemory_t,
         PCoutput => PCoutput_t,
         PCinput => PCinput_t,
+        inr => inr_t,
+        outr => outr_t,
         reset => reset_t
     );
 
@@ -194,6 +205,7 @@ begin
         cMemRead => cMemRead_t,
         cMemToReg => cMemToReg_t,
         cLdi => cLdi_t,
+        cJalr => cJalr_t,
         reset => reset_t
     );
 
@@ -240,8 +252,17 @@ begin
         b => PCinput_t
     );
 
+    regMux: Mux2
+    port map (
+        a1 => ALUToRegMux_t,
+        a2 => outMemory_t,
+        sel => cMemToReg_t,
+        b => writeInput_t
+    );
+
     instruction: InstructionMemory
     port map (
+        CLK => CLK_t,
         PC => PCinput_t,
         writeEnable => instructionWriteEnable_t,
         writeData => instructionWriteData_t,
@@ -249,11 +270,25 @@ begin
         reset => reset_t
     );
 
+    disk: Memory
+    port map(
+        ADDR => ALUToMemory_t(9 downto 0),
+        DIN => registerToMemory_t,
+        cMemWrite => cMemWrite_t,
+        cMemRead => cMemRead_t,
+        outMemory => outMemory_t,
+        reset => reset_t
+    );
+
     process (CLK, instructionWriteEnable)
         begin
+            CLK_t <= CLK;
+            reset_t <= reset;
             instructionWriteEnable_t <= instructionWriteEnable;
             instructionWriteAddr_t <= instructionWriteAddr;
             instructionWriteData_t <= instructionWriteData;
+            inr_t <= inr;
+            outr <= outr_t;
             instructionOut <= instruction_t;
     end process;
 
