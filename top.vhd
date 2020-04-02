@@ -8,6 +8,7 @@ entity top is
         instructionWriteEnable: in STD_LOGIC;
         instructionWriteAddr: in STD_LOGIC_VECTOR(15 downto 0);
         instructionWriteData: in STD_LOGIC_VECTOR(15 downto 0);
+        startPC: in STD_LOGIC_VECTOR(15 downto 0);
         instructionOut: out STD_LOGIC_VECTOR(15 downto 0);
         inr: in STD_LOGIC_VECTOR(3 downto 0);
         outr: out STD_LOGIC_VECTOR(15 downto 0);
@@ -29,9 +30,8 @@ architecture Behavioral of top is
             outr1toOffsetMux: out STD_LOGIC_VECTOR(15 downto 0);
             outr2toALU: out STD_LOGIC_VECTOR(15 downto 0);
             toMemory: out STD_LOGIC_VECTOR(15 downto 0) := "0000000000000000";
-            outvalue: out STD_LOGIC_VECTOR(15 downto 0);
             PCoutput: out STD_LOGIC_VECTOR(15 downto 0);
-            PCinput: in STD_LOGIC_VECTOR(15 downto 0);
+            PCinput: in STD_LOGIC_VECTOR(15 downto 0) := "0000000000000000";
             inr: in STD_LOGIC_VECTOR(3 downto 0);
             outr: out STD_LOGIC_VECTOR(15 downto 0);
             reset: in STD_LOGIC := '1'
@@ -39,6 +39,7 @@ architecture Behavioral of top is
     end component;
     component ALU is
         port (
+            CLK: in STD_LOGIC;
             ALUOp: in STD_LOGIC_VECTOR(3 downto 0) := "0000";
             A: in STD_LOGIC_VECTOR(15 downto 0) := "0000000000000000";
             B: in STD_LOGIC_VECTOR(15 downto 0) := "0000000000000000";
@@ -127,10 +128,9 @@ architecture Behavioral of top is
     signal cLdi_t : STD_LOGIC;
     signal cJalr_t: STD_LOGIC;
     signal writeInput_t: STD_LOGIC_VECTOR(15 downto 0);
-    signal PCinput_t: STD_LOGIC_VECTOR(15 downto 0);
+    signal PCinput_t: STD_LOGIC_VECTOR(15 downto 0) := "0000000000000000";
     -- RegisterFile out
     signal r1toOffsetMux_t: STD_LOGIC_VECTOR(15 downto 0);
-    signal r2toALU_t: STD_LOGIC_VECTOR(15 downto 0);
     signal registerToMemory_t: STD_LOGIC_VECTOR(15 downto 0);
     signal PCoutput_t: STD_LOGIC_VECTOR(15 downto 0);
 
@@ -174,9 +174,8 @@ begin
         cJalr => cJalr_t,
         writeInput => writeInput_t,
         outr1toOffsetMux => r1toOffsetMux_t,
-        outr2toALU => r2toALU_t,
+        outr2toALU => B_t,
         toMemory => registerToMemory_t,
-        outvalue => outMemory_t,
         PCoutput => PCoutput_t,
         PCinput => PCinput_t,
         inr => inr_t,
@@ -186,6 +185,7 @@ begin
 
     arithmetic: ALU
     port map (
+        CLK => CLK_t,
         ALUOp => cALUOp_t,
         A => A_t,
         B => B_t,
@@ -248,7 +248,7 @@ begin
     port map (
         a1 => incrementAdderOutput_t,
         a2 => branchAdderOutput_t,
-        sel => isBranch_t,
+        sel => isBranch_t, -- Branch under 2 conditions
         b => PCinput_t
     );
 
@@ -280,16 +280,13 @@ begin
         reset => reset_t
     );
 
-    process (CLK, instructionWriteEnable)
-        begin
-            CLK_t <= CLK;
-            reset_t <= reset;
-            instructionWriteEnable_t <= instructionWriteEnable;
-            instructionWriteAddr_t <= instructionWriteAddr;
-            instructionWriteData_t <= instructionWriteData;
-            inr_t <= inr;
-            outr <= outr_t;
-            instructionOut <= instruction_t;
-    end process;
+    CLK_t <= CLK;
+    reset_t <= reset;
+    instructionWriteEnable_t <= instructionWriteEnable;
+    instructionWriteAddr_t <= instructionWriteAddr;
+    instructionWriteData_t <= instructionWriteData;
+    inr_t <= inr;
+    outr <= outr_t;
+    instructionOut <= instruction_t;
 
 end Behavioral;

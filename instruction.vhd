@@ -22,14 +22,18 @@ begin
     process (CLK, reset, PC, writeEnable, writeData)
     begin
         if (reset = '1') then
-            instruction65536 <= (others => "0000000000000000");
+            instruction65536 <= (
+                                1 => "0010011000000011", -- ldi x6, 3
+                                2 => "0010011100000111", -- ldi x7, 7
+                                3 => "0100100001100000", -- mv x8, x6
+                                4 => "0101010101111000", -- add x5, x7, x8
+                                5 => "1100100001111010", -- blt x8, x7, x5
+                                others => "0000000000000000");
             outInstruction <= "0000000000000000";
         else
             if (writeEnable = '1') then
                 instruction65536(to_integer(unsigned(PC))) <= writeData;
-                report "we 1";
             else
-                report "wE 0";
                 outInstruction <= instruction65536(to_integer(unsigned(PC)));
             end if;
         end if;

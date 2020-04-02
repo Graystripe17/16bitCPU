@@ -4,6 +4,7 @@ use IEEE.numeric_std.all;
 
 entity ALU is
     port (
+        CLK: in STD_LOGIC;
         ALUOp: in STD_LOGIC_VECTOR(3 downto 0) := "0000";
         A: in STD_LOGIC_VECTOR(15 downto 0) := "0000000000000000";
         B: in STD_LOGIC_VECTOR(15 downto 0) := "0000000000000000";
@@ -18,7 +19,7 @@ architecture Behavioral of ALU is
 
 begin
     -- Asynchronous reset
-    process (reset, ALUOp, A, B)
+    process (CLK, reset, ALUOp, A, B)
         begin
             if (reset = '1') then
                 isBranch <= '0';
@@ -29,6 +30,7 @@ begin
                 case ALUOp is
                     when "0000" => -- halt
                         -- Do nothing
+                        isBranch <= '0'; -- Get branch unstuck
                     when "0001" => -- ld
                         -- Send out last 10 bits for address
                         outToMemory <= A(9 downto 0); -- Fetch r1
@@ -90,8 +92,10 @@ begin
                     when "1100" => -- blt
                         if (signed(A) < signed(B)) then
                             isBranch <= '1';
+                            report "YAY BLT";
                         else
                             isBranch <= '0';
+                            report "BOO";
                         end if;
                         outToRegMux <= "0000000000000000";
                         outToMemory <= "0000000000";
@@ -116,7 +120,6 @@ begin
                         report "Invalid opcode";
                 end case;
             end if;
-
     end process;
 
 end Behavioral;
