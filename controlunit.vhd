@@ -4,6 +4,7 @@ use IEEE.numeric_std.all;
 
 entity ControlUnit is
     port (
+        CLK: in STD_LOGIC;
         opcode: in STD_LOGIC_VECTOR(15 downto 12);
         cRegWrite: out STD_LOGIC;
         cOffset: out STD_LOGIC;
@@ -21,7 +22,7 @@ end ControlUnit;
 architecture Behavioral of ControlUnit is
     
 begin
-    process (reset, opcode)
+    process (CLK, reset)
     begin
         if (reset = '1') then
             cRegWrite <= '0';

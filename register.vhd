@@ -32,7 +32,7 @@ architecture Behavioral of RegisterFile is
 
 begin
 
-    process (CLK, reset, rd, r1, r2, cRegWrite, cLdi, cJalr, writeInput, PCinput)
+    process (CLK, reset)
         begin
             if (reset = '1') then
 --                register16 <= (0 => "0000000000000000",
@@ -66,10 +66,10 @@ begin
                     -- Special instruction ignore MemToReg
                     register16(to_integer(unsigned(rd))) <= "00000000" & r1 & r2;
                     report "Register: Ldi";
-                elsif (cJalr = '1') then
+                elsif (cJalr = '1' or rising_edge(cJalr)) then
                     -- If JALR flag, write to return register x10
                     register16(10) <= writeInput;
-                elsif (cRegWrite = '1') then
+                elsif (cRegWrite = '1' or rising_edge(cRegWrite)) then
                     register16(to_integer(unsigned(rd))) <= writeInput; -- Won't change immediately
                     report "WRITING";
                 end if;

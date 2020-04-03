@@ -19,7 +19,7 @@ architecture Behavioral of ALU is
 
 begin
     -- Asynchronous reset
-    process (CLK, reset, ALUOp, A, B)
+    process (CLK, reset)
         begin
             if (reset = '1') then
                 isBranch <= '0';

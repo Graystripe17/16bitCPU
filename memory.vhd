@@ -27,11 +27,11 @@ begin
         else
             if (cMemRead = '1') then
                 outMemory <= memory1024(to_integer(unsigned(ADDR)));
-            end if;
-            if (cMemWrite = '1') then
+                report "cmemR1";
+            elsif (cMemWrite = '1') then
                 memory1024(to_integer(unsigned(ADDR))) <= DIN;
-            end if;
-            if (cMemRead = '0' and cMemWrite = '0') then
+                report "cmemW1";
+            elsif (cMemRead = '0' and cMemWrite = '0') then
                 -- Pass through DIN
                 -- Useful for ldi and mv instructions
                 outMemory <= DIN;

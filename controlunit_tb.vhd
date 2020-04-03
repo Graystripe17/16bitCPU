@@ -8,6 +8,7 @@ end t_controlunit;
 architecture behavior of t_controlunit is
     component ControlUnit is
         port (
+            CLK: in STD_LOGIC;
             opcode: in STD_LOGIC_VECTOR(15 downto 12);
             cRegWrite: out STD_LOGIC;
             cOffset: out STD_LOGIC;

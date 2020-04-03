@@ -51,6 +51,7 @@ architecture Behavioral of top is
     end component;
     component ControlUnit is
         port (
+            CLK: in STD_LOGIC;
             opcode: in STD_LOGIC_VECTOR(15 downto 12);
             cRegWrite: out STD_LOGIC;
             cOffset: out STD_LOGIC;
@@ -200,6 +201,7 @@ begin
 
     control: ControlUnit
     port map (
+        CLK => CLK_t,
         opcode => instruction_t(15 downto 12),
         cRegWrite => cRegWrite_t,
         cOffset => cOffset_t,
