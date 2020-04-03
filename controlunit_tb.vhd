@@ -17,6 +17,7 @@ architecture behavior of t_controlunit is
             cMemToReg: out STD_LOGIC;
             cLdi: out STD_LOGIC;
             cJalr: out STD_LOGIC;
+            cIsBranch: out STD_LOGIC;
             reset: in STD_LOGIC
         );
     end component ControlUnit;
@@ -30,6 +31,7 @@ architecture behavior of t_controlunit is
     signal cMemToReg_t: STD_LOGIC;
     signal cLdi_t: STD_LOGIC;
     signal cJalr_t: STD_LOGIC;
+    signal cIsBranch_t: STD_LOGIC;
     signal reset_t : STD_LOGIC;
 
     begin
@@ -44,6 +46,7 @@ architecture behavior of t_controlunit is
             cMemToReg => cMemToReg_t,
             cLdi => cLdi_t,
             cJalr => cJalr_t,
+            cIsBranch => cIsBranch_t,
             reset => reset_t
         );
         process

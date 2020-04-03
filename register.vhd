@@ -32,10 +32,7 @@ architecture Behavioral of RegisterFile is
 
 begin
 
-    register16(15) <= PCinput;
-    PCoutput <= PCinput;
-
-    process (CLK)
+    process (CLK, reset, rd, r1, r2, cRegWrite, cLdi, cJalr, writeInput, PCinput)
         begin
             if (reset = '1') then
 --                register16 <= (0 => "0000000000000000",
@@ -56,6 +53,11 @@ begin
                 PCoutput <= "0000000000000000";
                 outr <= "0000000000000000";
             else
+                if (falling_edge(CLK)) then
+                    register16(15) <= PCinput;
+                    PCoutput <= PCinput;
+                end if;
+
                 outr1toOffsetMux <= register16(to_integer(unsigned(r1)));
                 outr2toALU <= register16(to_integer(unsigned(r2)));
                 toMemory <= register16(to_integer(unsigned(r1))); -- Load or store

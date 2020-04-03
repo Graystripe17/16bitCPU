@@ -1,0 +1,3162 @@
+top_tb.vhd:61:13:@0ms:(report note): MAIN
+../../src/ieee/numeric_std-body.v93:2098:7:@0ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee/numeric_std-body.v93:2098:7:@0ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee/numeric_std-body.v93:2098:7:@0ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee/numeric_std-body.v93:2098:7:@0ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+ALU.vhd:121:25:@0ms:(report note): Invalid opcode
+../../src/ieee/numeric_std-body.v93:2098:7:@0ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+memory.vhd:40:13:@0ms:(report note): reset off
+../../src/ieee/numeric_std-body.v93:2098:7:@0ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+memory.vhd:40:13:@0ms:(report note): reset off
+ALU.vhd:121:25:@0ms:(report note): Invalid opcode
+../../src/ieee/numeric_std-body.v93:2098:7:@0ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+ALU.vhd:28:17:@0ms:(report note): reset on
+memory.vhd:27:13:@0ms:(report note): reset on
+ALU.vhd:28:17:@5ns:(report note): reset on
+memory.vhd:40:13:@10ns:(report note): reset off
+register.vhd:68:21:@10ns:(report note): Register: Ldi
+register.vhd:68:21:@15ns:(report note): Register: Ldi
+register.vhd:68:21:@20ns:(report note): Register: Ldi
+register.vhd:68:21:@20ns:(report note): Register: Ldi
+register.vhd:68:21:@20ns:(report note): Register: Ldi
+register.vhd:68:21:@25ns:(report note): Register: Ldi
+register.vhd:68:21:@30ns:(report note): Register: Ldi
+register.vhd:68:21:@30ns:(report note): Register: Ldi
+register.vhd:68:21:@30ns:(report note): Register: Ldi
+register.vhd:74:21:@30ns:(report note): WRITING
+ALU.vhd:49:25:@30ns:(report note): MV
+memory.vhd:40:13:@30ns:(report note): reset off
+ALU.vhd:49:25:@30ns:(report note): MV
+register.vhd:74:21:@30ns:(report note): WRITING
+ALU.vhd:49:25:@35ns:(report note): MV
+register.vhd:74:21:@35ns:(report note): WRITING
+ALU.vhd:49:25:@40ns:(report note): MV
+register.vhd:74:21:@40ns:(report note): WRITING
+register.vhd:74:21:@40ns:(report note): WRITING
+register.vhd:74:21:@40ns:(report note): WRITING
+memory.vhd:40:13:@40ns:(report note): reset off
+register.vhd:74:21:@40ns:(report note): WRITING
+register.vhd:74:21:@40ns:(report note): WRITING
+register.vhd:74:21:@45ns:(report note): WRITING
+register.vhd:74:21:@50ns:(report note): WRITING
+register.vhd:74:21:@50ns:(report note): WRITING
+register.vhd:74:21:@50ns:(report note): WRITING
+ALU.vhd:99:29:@50ns:(report note): BOO
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+ALU.vhd:96:29:@50ns:(report note): YAY BLT
+register.vhd:74:21:@50ns:(report note): WRITING
+memory.vhd:40:13:@50ns:(report note): reset off
+memory.vhd:40:13:@50ns:(report note): reset off
+ghdl:info: simulation stopped @50ns by --stop-delta=5000

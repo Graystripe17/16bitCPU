@@ -46,6 +46,7 @@ begin
                         isBranch <= '0';
                         outToRegMux <= "0000000000000000";
                     when "0100" => -- mv
+                        report "MV";
                         -- Pass contents of r1 to outToRegMux
                         outToRegMux <= A;
                         -- Reset outputs

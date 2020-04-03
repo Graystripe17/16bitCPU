@@ -13,6 +13,7 @@ entity ControlUnit is
         cMemToReg: out STD_LOGIC;
         cLdi: out STD_LOGIC;
         cJalr: out STD_LOGIC;
+        cIsBranch: out STD_LOGIC;
         reset: in STD_LOGIC
     );
 end ControlUnit;
@@ -30,6 +31,7 @@ begin
             cMemRead <= '0';
             cMemToReg <= '0';
             cLdi <= '0';
+            cIsBranch <= '0';
             cJalr <= '0';
         else
             cALUOp <= opcode;
@@ -42,6 +44,7 @@ begin
                     cMemRead <= '1';
                     cMemToReg <= '1'; -- Pass back memory
                     cLdi <= '0';
+                    cIsBranch <= '0';
                     cJalr <= '0';
                 when "0010" => -- ldi
                     -- Loads 8 bit immediate into rd
@@ -51,6 +54,7 @@ begin
                     cMemRead <= '0';
                     cMemToReg <= 'X'; -- Ignored
                     cLdi <= '1';
+                    cIsBranch <= '0';
                     cJalr <= '0';
                 when "0011" => -- sd
                     -- Stores to memory
@@ -60,6 +64,7 @@ begin
                     cMemRead <= '0';
                     cMemToReg <= '0';
                     cLdi <= '0';
+                    cIsBranch <= '0';
                     cJalr <= '0';
                 when "0100" | "0101" | "0110" | "0111" | "1000" | "1001" | "1010" => 
                     -- mv | add | sub | sll | srl | and | or
@@ -69,24 +74,28 @@ begin
                     cMemRead <= '0';
                     cMemToReg <= '0'; -- Pass back ALU out
                     cLdi <= '0';
+                    cIsBranch <= '0';
                     cJalr <= '0';
                 when "1011" | "1100" | "1101" | "1110" =>
                     -- beq | blt | bge | jal
-                    cRegWrite <= '1';
+                    report "JUMPIN JALAPENOS";
+                    cRegWrite <= '0';
                     cOffset <= '1';
                     cMemWrite <= '0';
                     cMemRead <= '0';
                     cMemToReg <= '0';
                     cLdi <= '0';
+                    cIsBranch <= '1';
                     cJalr <= '0';
                 when "1111" =>
                     -- jalr
-                    cRegWrite <= '1';
+                    cRegWrite <= '0'; -- CHECK THIS GUY VERY CAREFULLY
                     cOffset <= '1';
                     cMemWrite <= '0';
                     cMemRead <= '0';
                     cMemToReg <= '0';
                     cLdi <= '0';
+                    cIsBranch <= '1';
                     cJalr <= '1';
                 when others => -- halt
                     cRegWrite <= '0';
@@ -95,6 +104,7 @@ begin
                     cMemRead <= '0';
                     cMemToReg <= '0';
                     cLdi <= '0';
+                    cIsBranch <= '0';
                     cJalr <= '0';
             end case;
         end if;

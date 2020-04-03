@@ -60,6 +60,7 @@ architecture Behavioral of top is
             cMemToReg: out STD_LOGIC;
             cLdi: out STD_LOGIC;
             cJalr: out STD_LOGIC;
+            cIsBranch: out STD_LOGIC;
             reset: in STD_LOGIC
         );
     end component;
@@ -112,6 +113,7 @@ architecture Behavioral of top is
     -- Global
     signal CLK_t: STD_LOGIC := '0';
     signal reset_t: STD_LOGIC;
+    signal andBranch_t: STD_LOGIC;
 
     -- Instruction Memory Write
     signal instructionWriteEnable_t: STD_LOGIC;
@@ -158,6 +160,7 @@ architecture Behavioral of top is
     signal cMemToReg_t: STD_LOGIC;
     signal cMemWrite_t: STD_LOGIC;
     signal cMemRead_t: STD_LOGIC;
+    signal cIsBranch_t: STD_LOGIC;
 
     -- Dummy Cout
     signal carry_t: STD_LOGIC;
@@ -206,6 +209,7 @@ begin
         cMemToReg => cMemToReg_t,
         cLdi => cLdi_t,
         cJalr => cJalr_t,
+        cIsBranch => cIsBranch_t,
         reset => reset_t
     );
 
@@ -248,7 +252,7 @@ begin
     port map (
         a1 => incrementAdderOutput_t,
         a2 => branchAdderOutput_t,
-        sel => isBranch_t, -- Branch under 2 conditions
+        sel => andBranch_t, -- Branch under 2 conditions
         b => PCinput_t
     );
 
@@ -282,6 +286,7 @@ begin
 
     CLK_t <= CLK;
     reset_t <= reset;
+    andBranch_t <= isBranch_t and cIsBranch_t;
     instructionWriteEnable_t <= instructionWriteEnable;
     instructionWriteAddr_t <= instructionWriteAddr;
     instructionWriteData_t <= instructionWriteData;
