@@ -18,7 +18,7 @@ open top.vcd
 ```
 
 ## Assembly
-Hand compile your assembly code in instruction.vhd from 16 basic instructions.
+Hand assemble your assembly code in instruction.vhd from 16 basic instructions.
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)

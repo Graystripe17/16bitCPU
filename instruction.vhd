@@ -72,6 +72,7 @@ begin
                                 9 => "1010101100100011",
 
                                  -- blt x8, x5, x7
+                                 -- x8 contains 3, so jump forward 3 instructions
                                  -- Opcode rd x8  r1 x5  r2 x7
                                  -- 1100   1000   1010   0111
                                 10 => "1100100010100111",
@@ -79,7 +80,8 @@ begin
                                 11 => "0101010101111000",
                                 12 => "0101010101111000",
                                 123 => "0101010101111000",
-                                others => "0101010101111000");
+                                -- ldi x6, 16
+                                others => "0010011000001111");
             outInstruction <= "0000000000000000";
         else
             if (writeEnable = '1') then

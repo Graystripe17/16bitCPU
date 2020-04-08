@@ -230,7 +230,7 @@ begin
     generic map (N => 16)
     port map (
         A => PCoutput_t,
-        B => signExtension_t,
+        B => B_t, -- Used to be signExtension_t
         sum => branchAdderOutput_t,
         Cout => carry_t,
         reset => reset_t
