@@ -17,8 +17,6 @@ entity RegisterFile is
         outr1toOffsetMux: out STD_LOGIC_VECTOR(15 downto 0);
         outr2toALU: out STD_LOGIC_VECTOR(15 downto 0);
         toMemory: out STD_LOGIC_VECTOR(15 downto 0) := "0000000000000000";
-        PCoutput: out STD_LOGIC_VECTOR(15 downto 0);
-        PCinput: in STD_LOGIC_VECTOR(15 downto 0);
         inr: in STD_LOGIC_VECTOR(3 downto 0);
         outr: out STD_LOGIC_VECTOR(15 downto 0);
         reset: in STD_LOGIC := '1'
@@ -31,6 +29,7 @@ architecture Behavioral of RegisterFile is
     signal register16: memory := (others => "0000000000000000");
 
 begin
+
 
     process (CLK, reset)
         begin
@@ -50,28 +49,25 @@ begin
                 outr1toOffsetMux <= "0000000000000000";
                 outr2toALU <= "0000000000000000";
                 toMemory <= "0000000000000000";
-                PCoutput <= "0000000000000000";
                 outr <= "0000000000000000";
             else
                 if (falling_edge(CLK)) then
-                    register16(15) <= PCinput;
-                    PCoutput <= PCinput;
-                end if;
 
-                outr1toOffsetMux <= register16(to_integer(unsigned(r1)));
-                outr2toALU <= register16(to_integer(unsigned(r2)));
-                toMemory <= register16(to_integer(unsigned(r1))); -- Load or store
-                outr <= register16(to_integer(unsigned(inr))); -- Debug
-                if (cLdi = '1' or rising_edge(cLdi)) then
-                    -- Special instruction ignore MemToReg
-                    register16(to_integer(unsigned(rd))) <= "00000000" & r1 & r2;
-                    report "Register: Ldi";
-                elsif (cJalr = '1' or rising_edge(cJalr)) then
-                    -- If JALR flag, write to return register x10
-                    register16(10) <= writeInput;
-                elsif (cRegWrite = '1' or rising_edge(cRegWrite)) then
-                    register16(to_integer(unsigned(rd))) <= writeInput; -- Won't change immediately
-                    report "WRITING";
+                    outr1toOffsetMux <= register16(to_integer(unsigned(r1)));
+                    outr2toALU <= register16(to_integer(unsigned(r2)));
+                    toMemory <= register16(to_integer(unsigned(r1))); -- Load or store
+                    outr <= register16(to_integer(unsigned(inr))); -- Debug
+                    if (cLdi = '1' or falling_edge(cLdi)) then
+                        -- Special instruction ignore MemToReg
+                        register16(to_integer(unsigned(rd))) <= "00000000" & r1 & r2;
+                        report "Register: Ldi";
+                    elsif (cJalr = '1' or falling_edge(cJalr)) then
+                        -- If JALR flag, write to return register x10
+                        register16(10) <= writeInput;
+                    elsif (cRegWrite = '1' or falling_edge(cRegWrite)) then
+                        register16(to_integer(unsigned(rd))) <= writeInput; -- Won't change immediately
+                        report "WRITING";
+                    end if;
                 end if;
             end if;
     end process;

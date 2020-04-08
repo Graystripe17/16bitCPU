@@ -30,8 +30,6 @@ architecture Behavioral of top is
             outr1toOffsetMux: out STD_LOGIC_VECTOR(15 downto 0);
             outr2toALU: out STD_LOGIC_VECTOR(15 downto 0);
             toMemory: out STD_LOGIC_VECTOR(15 downto 0) := "0000000000000000";
-            PCoutput: out STD_LOGIC_VECTOR(15 downto 0);
-            PCinput: in STD_LOGIC_VECTOR(15 downto 0) := "0000000000000000";
             inr: in STD_LOGIC_VECTOR(3 downto 0);
             outr: out STD_LOGIC_VECTOR(15 downto 0);
             reset: in STD_LOGIC := '1'
@@ -115,6 +113,7 @@ architecture Behavioral of top is
     signal CLK_t: STD_LOGIC := '0';
     signal reset_t: STD_LOGIC;
     signal andBranch_t: STD_LOGIC;
+    signal PC_t: STD_LOGIC_VECTOR(15 downto 0) := "0000000000000000";
 
     -- Instruction Memory Write
     signal instructionWriteEnable_t: STD_LOGIC;
@@ -180,8 +179,6 @@ begin
         outr1toOffsetMux => r1toOffsetMux_t,
         outr2toALU => B_t,
         toMemory => registerToMemory_t,
-        PCoutput => PCoutput_t,
-        PCinput => PCinput_t,
         inr => inr_t,
         outr => outr_t,
         reset => reset_t
@@ -226,7 +223,7 @@ begin
     generic map (N => 16)
     port map (
         A => "0000000000000001",
-        B => PCoutput_t,
+        B => PC_t,
         sum => incrementAdderOutput_t,
         Cout => carry_t,
         reset => reset_t
@@ -235,7 +232,7 @@ begin
     branchAdder: Adder
     generic map (N => 16)
     port map (
-        A => PCoutput_t,
+        A => PC_t,
         B => signExtension_t,
         sum => branchAdderOutput_t,
         Cout => carry_t,
@@ -255,7 +252,7 @@ begin
         a1 => incrementAdderOutput_t,
         a2 => branchAdderOutput_t,
         sel => andBranch_t, -- Branch under 2 conditions
-        b => PCinput_t
+        b => PC_t
     );
 
     regMux: Mux2
@@ -269,7 +266,7 @@ begin
     instruction: InstructionMemory
     port map (
         CLK => CLK_t,
-        PC => PCinput_t,
+        PC => PC_t,
         writeEnable => instructionWriteEnable_t,
         writeData => instructionWriteData_t,
         outInstruction => instruction_t,
