@@ -21,6 +21,7 @@ begin
     -- Asynchronous reset
     process (CLK, reset, ALUOp, A, B)
         begin
+            report "ALU called";
             if (reset = '1') then
                 isBranch <= '0';
                 outToMemory <= "0000000000";

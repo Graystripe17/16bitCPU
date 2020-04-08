@@ -177,18 +177,8 @@ architecture Behavioral of t_top is
 --             inr_t <= "1001";
 --             wait for CLK_period * 50;
 --             report "Execution complete";
-                for A in 0 to 15 loop
-                    inr_t <= STD_LOGIC_VECTOR(to_unsigned(A, 4));
-                    wait for 10 ns;
-                end loop;
-                for A in 0 to 15 loop
-                    inr_t <= STD_LOGIC_VECTOR(to_unsigned(A, 4));
-                    wait for 10 ns;
-                end loop;
-                for A in 0 to 15 loop
-                    inr_t <= STD_LOGIC_VECTOR(to_unsigned(A, 4));
-                    wait for 10 ns;
-                end loop;
+                inr_t <= "1000";
+                wait for 50 ns;
                 for A in 0 to 15 loop
                     inr_t <= STD_LOGIC_VECTOR(to_unsigned(A, 4));
                     wait for 10 ns;

@@ -32,8 +32,12 @@ architecture Behavioral of RegisterFile is
 
 begin
 
-    register16(15) <= PCinput;
-    PCoutput <= PCinput;
+    PCoutput <= register16(15);
+
+    outr1toOffsetMux <= register16(to_integer(unsigned(r1)));
+    outr2toALU <= register16(to_integer(unsigned(r2)));
+    toMemory <= register16(to_integer(unsigned(r1))); -- Load or store
+    outr <= register16(to_integer(unsigned(inr))); -- Debug
 
     process (CLK)
         begin
@@ -50,26 +54,21 @@ begin
         --                      9 => "0000000111111111",
          --                     others => "1000000000000000");
                 register16 <= (others => "0000000000000000");
-                outr1toOffsetMux <= "0000000000000000";
-                outr2toALU <= "0000000000000000";
-                toMemory <= "0000000000000000";
-                PCoutput <= "0000000000000000";
-                outr <= "0000000000000000";
+                register16(to_integer(unsigned(r1))) <= "0000000000000000";
+                register16(to_integer(unsigned(r2))) <= "0000000000000000";
+                register16(to_integer(unsigned(inr))) <= "0000000000000000";
+                register16(15) <= "0000000000000000";
             else
-                outr1toOffsetMux <= register16(to_integer(unsigned(r1)));
-                outr2toALU <= register16(to_integer(unsigned(r2)));
-                toMemory <= register16(to_integer(unsigned(r1))); -- Load or store
-                outr <= register16(to_integer(unsigned(inr))); -- Debug
-                if (cLdi = '1' or rising_edge(cLdi)) then
+                register16(15) <= PCinput;
+                if (cLdi = '1') then
                     -- Special instruction ignore MemToReg
                     register16(to_integer(unsigned(rd))) <= "00000000" & r1 & r2;
-                    report "Register: Ldi";
                 elsif (cJalr = '1') then
                     -- If JALR flag, write to return register x10
                     register16(10) <= writeInput;
                 elsif (cRegWrite = '1') then
-                    register16(to_integer(unsigned(rd))) <= writeInput; -- Won't change immediately
-                    report "WRITING";
+                    register16(to_integer(unsigned(rd))) <= writeInput; -- Warning: Changes on the next clock cycle
+                    report "register called";
                 end if;
             end if;
     end process;
