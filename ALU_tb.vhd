@@ -8,6 +8,7 @@ end t_alu;
 architecture behavior of t_alu is
     component ALU is 
         port(
+            CLK: in STD_LOGIC;
             ALUOp: in STD_LOGIC_VECTOR(3 downto 0) := "0000";
             A: in STD_LOGIC_VECTOR(15 downto 0) := "0000000000000000";
             B: in STD_LOGIC_VECTOR(15 downto 0) := "0000000000000000";
@@ -18,6 +19,7 @@ architecture behavior of t_alu is
         );
     end component ALU;
 
+    signal CLK_t: STD_LOGIC := '0';
     signal ALUOp_t: STD_LOGIC_VECTOR(3 downto 0);
     signal A_t: STD_LOGIC_VECTOR(15 downto 0);
     signal B_t: STD_LOGIC_VECTOR(15 downto 0);
@@ -29,6 +31,7 @@ architecture behavior of t_alu is
     begin
         math: ALU
         port map(
+            CLK => CLK_t,
             ALUOp => ALUOp_t,
             A => A_t,
             B => B_t,
@@ -95,10 +98,10 @@ architecture behavior of t_alu is
 
                 -- Test srl
                 ALUOp_t <= "1000";
-                A_t <= "1010101010101010";
-                B_t <= "0000000000000001";
+                A_t <= "1010000010101010";
+                B_t <= "0000000000000011";
                 wait for 1 ms;
-                assert outToRegMux_t = "1101010101010101"; -- Pad with 1
+                assert outToRegMux_t = "1111010000010101"; -- Pad with 1
                 wait for 1 ms;
                 
                 -- Test and
@@ -161,6 +164,4 @@ architecture behavior of t_alu is
 
                 report "Test complete";
         end process;
-
-
 end behavior;

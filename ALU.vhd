@@ -21,12 +21,10 @@ begin
     -- Asynchronous reset
     process (CLK, reset, ALUOp, A, B)
         begin
-            report "ALU called";
             if (reset = '1') then
                 isBranch <= '0';
                 outToMemory <= "0000000000";
                 outToRegMux <= "0000000000000000";
-                report "reset on";
             else
                 case ALUOp is
                     when "0000" => -- halt

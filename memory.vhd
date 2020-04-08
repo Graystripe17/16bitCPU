@@ -24,7 +24,6 @@ begin
         if (reset = '1') then
             memory1024 <= (others => "0000000000000000");
             outMemory <= "0000000000000000";
-            report "reset on";
         else
             if (cMemRead = '1') then
                 outMemory <= memory1024(to_integer(unsigned(ADDR)));
@@ -37,7 +36,6 @@ begin
                 -- Useful for ldi and mv instructions
                 outMemory <= DIN;
             end if;
-            report "reset off";
         end if;
         
     end process;

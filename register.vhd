@@ -68,7 +68,6 @@ begin
                     register16(10) <= writeInput;
                 elsif (cRegWrite = '1') then
                     register16(to_integer(unsigned(rd))) <= writeInput; -- Warning: Changes on the next clock cycle
-                    report "register called";
                 end if;
             end if;
     end process;
