@@ -72,11 +72,10 @@ begin
                                 9 => "1010101100100011",
 
                                  -- blt x8, x5, x7
-                                 -- x8 contains 3, so jump forward 3 instructions
+                                 -- x8 contains 3, so jump forward 3 instructions if x5 < x7
                                  -- Opcode rd x8  r1 x5  r2 x7
                                  -- 1100   1000   1010   0111
                                 10 => "1100100010100111",
-
                                 11 => "0101010101111000",
                                 12 => "0101010101111000",
                                 123 => "0101010101111000",

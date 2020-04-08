@@ -16,6 +16,7 @@ entity RegisterFile is
         writeInput: in STD_LOGIC_VECTOR(15 downto 0);
         outr1toOffsetMux: out STD_LOGIC_VECTOR(15 downto 0);
         outr2toALU: out STD_LOGIC_VECTOR(15 downto 0);
+        rdContent: out STD_LOGIC_VECTOR(15 downto 0);
         toMemory: out STD_LOGIC_VECTOR(15 downto 0) := "0000000000000000";
         PCoutput: out STD_LOGIC_VECTOR(15 downto 0);
         PCinput: in STD_LOGIC_VECTOR(15 downto 0);
@@ -33,9 +34,10 @@ architecture Behavioral of RegisterFile is
 begin
 
     PCoutput <= register16(15);
-
+    
     outr1toOffsetMux <= register16(to_integer(unsigned(r1)));
     outr2toALU <= register16(to_integer(unsigned(r2)));
+    rdContent <= register16(to_integer(unsigned(rd)));
     toMemory <= register16(to_integer(unsigned(r1))); -- Load or store
     outr <= register16(to_integer(unsigned(inr))); -- Debug
 
@@ -54,6 +56,7 @@ begin
         --                      9 => "0000000111111111",
          --                     others => "1000000000000000");
                 register16 <= (others => "0000000000000000");
+                register16(to_integer(unsigned(rd))) <= "0000000000000000";
                 register16(to_integer(unsigned(r1))) <= "0000000000000000";
                 register16(to_integer(unsigned(r2))) <= "0000000000000000";
                 register16(to_integer(unsigned(inr))) <= "0000000000000000";

@@ -29,6 +29,7 @@ architecture Behavioral of top is
             writeInput: in STD_LOGIC_VECTOR(15 downto 0);
             outr1toOffsetMux: out STD_LOGIC_VECTOR(15 downto 0);
             outr2toALU: out STD_LOGIC_VECTOR(15 downto 0);
+            rdContent: out STD_LOGIC_VECTOR(15 downto 0);
             toMemory: out STD_LOGIC_VECTOR(15 downto 0) := "0000000000000000";
             PCoutput: out STD_LOGIC_VECTOR(15 downto 0);
             PCinput: in STD_LOGIC_VECTOR(15 downto 0) := "0000000000000000";
@@ -133,6 +134,7 @@ architecture Behavioral of top is
     signal r1toOffsetMux_t: STD_LOGIC_VECTOR(15 downto 0);
     signal registerToMemory_t: STD_LOGIC_VECTOR(15 downto 0);
     signal PCoutput_t: STD_LOGIC_VECTOR(15 downto 0);
+    signal rdContent_t: STD_LOGIC_VECTOR(15 downto 0);
 
     -- ALU in
     signal cALUOp_t: STD_LOGIC_VECTOR(3 downto 0) := "0000";
@@ -175,6 +177,7 @@ begin
         writeInput => writeInput_t,
         outr1toOffsetMux => r1toOffsetMux_t,
         outr2toALU => B_t,
+        rdContent => rdContent_t,
         toMemory => registerToMemory_t,
         PCoutput => PCoutput_t,
         PCinput => PCinput_t,
@@ -230,7 +233,7 @@ begin
     generic map (N => 16)
     port map (
         A => PCoutput_t,
-        B => B_t, -- Used to be signExtension_t
+        B => rdContent_t, -- Used to be signExtension_t, PC incremented
         sum => branchAdderOutput_t,
         Cout => carry_t,
         reset => reset_t

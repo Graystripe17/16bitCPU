@@ -19,7 +19,7 @@ architecture Behavioral of ALU is
 
 begin
     -- Asynchronous reset
-    process (CLK, reset, ALUOp, A, B)
+    process (CLK, reset)
         begin
             if (reset = '1') then
                 isBranch <= '0';
@@ -38,6 +38,9 @@ begin
                         outToRegMux <= "0000000000000000";
                     when "0010" => -- ldi
                         -- Handled internally through register file
+                        outToMemory <= "0000000000";
+                        isBranch <= '0';
+                        outToRegMux <= "0000000000000000";
                     when "0011" => -- sd
                         -- Send out last 10 bits of r2
                         outToMemory <= B(9 downto 0);
