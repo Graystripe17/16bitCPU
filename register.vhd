@@ -41,7 +41,7 @@ begin
     toMemory <= register16(to_integer(unsigned(r1))); -- Load or store
     outr <= register16(to_integer(unsigned(inr))); -- Debug
 
-    process (CLK)
+    process (CLK, writeInput)
         begin
             if (reset = '1') then
 --                register16 <= (0 => "0000000000000000",
@@ -62,7 +62,9 @@ begin
                 register16(to_integer(unsigned(inr))) <= "0000000000000000";
                 register16(15) <= "0000000000000000";
             else
-                register16(15) <= PCinput;
+                if falling_edge(CLK) then
+                    register16(15) <= PCinput;
+                end if;
                 if (cLdi = '1') then
                     -- Special instruction ignore MemToReg
                     register16(to_integer(unsigned(rd))) <= "00000000" & r1 & r2;
