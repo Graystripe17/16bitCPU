@@ -68,11 +68,11 @@ begin
                 if (cLdi = '1') then
                     -- Special instruction ignore MemToReg
                     register16(to_integer(unsigned(rd))) <= "00000000" & r1 & r2;
+                elsif (cRegWrite = '1') then
+                    register16(to_integer(unsigned(rd))) <= writeInput;
                 elsif (cJalr = '1') then
                     -- If JALR flag, write to return register x10
                     register16(10) <= writeInput;
-                elsif (cRegWrite = '1') then
-                    register16(to_integer(unsigned(rd))) <= writeInput; -- Warning: Changes on the next clock cycle
                 end if;
             end if;
     end process;
