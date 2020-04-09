@@ -88,6 +88,7 @@ begin
                     cMemToReg <= '0';
                     cLdi <= '0';
                     cJalr <= '1';
+                    report "cMemToReg 0";
                 when others => -- halt
                     cRegWrite <= '0';
                     cOffset <= '0';

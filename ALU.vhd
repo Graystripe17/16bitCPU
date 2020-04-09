@@ -17,14 +17,20 @@ end ALU;
 
 architecture Behavioral of ALU is
 
+signal A_t: STD_LOGIC_VECTOR(15 downto 0);
+signal B_t: STD_LOGIC_VECTOR(15 downto 0);
+signal isBranch_t: STD_LOGIC;
+signal outToMemory_t: STD_LOGIC_VECTOR(9 downto 0);
+signal outToRegMux_t: STD_LOGIC_VECTOR(15 downto 0);
+
 begin
-    -- Asynchronous reset
+
     process (CLK, reset)
         begin
             if (reset = '1') then
-                isBranch <= '0';
-                outToMemory <= "0000000000";
-                outToRegMux <= "0000000000000000";
+                isBranch_t <= '0';
+                outToMemory_t <= "0000000000";
+                outToRegMux_t <= "0000000000000000";
             else
                 case ALUOp is
                     when "0000" => -- halt
@@ -94,10 +100,8 @@ begin
                     when "1100" => -- blt
                         if (signed(A) < signed(B)) then
                             isBranch <= '1';
-                            report "YAY BLT";
                         else
                             isBranch <= '0';
-                            report "BOO";
                         end if;
                         outToRegMux <= "0000000000000000";
                         outToMemory <= "0000000000";
