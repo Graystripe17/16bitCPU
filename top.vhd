@@ -30,7 +30,8 @@ architecture Behavioral of top is
             outr1toOffsetMux: out STD_LOGIC_VECTOR(15 downto 0);
             outr2toALU: out STD_LOGIC_VECTOR(15 downto 0);
             rdContent: out STD_LOGIC_VECTOR(15 downto 0);
-            toMemory: out STD_LOGIC_VECTOR(15 downto 0) := "0000000000000000";
+            toMemoryADDR: out STD_LOGIC_VECTOR(9 downto 0) := "0000000000";
+            toMemoryDIN: out STD_LOGIC_VECTOR(15 downto 0);
             PCoutput: out STD_LOGIC_VECTOR(15 downto 0);
             PCinput: in STD_LOGIC_VECTOR(15 downto 0) := "0000000000000000";
             inr: in STD_LOGIC_VECTOR(3 downto 0);
@@ -132,7 +133,8 @@ architecture Behavioral of top is
     signal PCinput_t: STD_LOGIC_VECTOR(15 downto 0) := "0000000000000000";
     -- RegisterFile out
     signal r1toOffsetMux_t: STD_LOGIC_VECTOR(15 downto 0);
-    signal registerToMemory_t: STD_LOGIC_VECTOR(15 downto 0);
+    signal registerToMemoryADDR_t: STD_LOGIC_VECTOR(9 downto 0);
+    signal registerToMemoryDIN_t: STD_LOGIC_VECTOR(15 downto 0);
     signal PCoutput_t: STD_LOGIC_VECTOR(15 downto 0);
     signal rdContent_t: STD_LOGIC_VECTOR(15 downto 0);
 
@@ -178,7 +180,8 @@ begin
         outr1toOffsetMux => r1toOffsetMux_t,
         outr2toALU => B_t,
         rdContent => rdContent_t,
-        toMemory => registerToMemory_t,
+        toMemoryDIN => registerToMemoryDIN_t,
+        toMemoryADDR => registerToMemoryADDR_t,
         PCoutput => PCoutput_t,
         PCinput => PCinput_t,
         inr => inr_t,
@@ -275,8 +278,8 @@ begin
 
     disk: Memory
     port map(
-        ADDR => ALUToMemory_t(9 downto 0),
-        DIN => registerToMemory_t,
+        ADDR => registerToMemoryADDR_t, -- Delete ALUToMemory
+        DIN => registerToMemoryDIN_t,
         cMemWrite => cMemWrite_t,
         cMemRead => cMemRead_t,
         outMemory => outMemory_t,

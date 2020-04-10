@@ -74,11 +74,11 @@ begin
                                  -- Opcode rd x11 r1 x2  r2 x3
                                  -- 1010   1011   0010   0011
                                 9 => "1010101100100011", -- AB23
-                                 -- blt x8, x10, x7
-                                 -- x8 contains 3, so jump forward 3 instructions if x5 < x7
-                                 -- Opcode rd x8  r1 x10 r2 x7
-                                 -- 1100   1000   1010   0111
-                                10 => "1100100010100111", -- C8A7
+                                 -- blt x4, x10, x7
+                                 -- x4 contains 4, so jump forward 4 instructions if x10 < x7
+                                 -- Opcode rd x4  r1 x10 r2 x7
+                                 -- 1100   0100   1010   0111
+                                10 => "1100010010100111", -- C4A7
                                  -- beq x2, x3, x4
                                  -- x2 = 80
                                  -- x3 = 1
@@ -86,23 +86,23 @@ begin
                                  -- Do not branch, since x3 != x4
                                  -- Opcode rd x2  r1 x3  r2 x4
                                  -- 1011   0010   0011   0100
-                                13 => "1011001000110100", -- B134
+                                14 => "1011001000110100", -- B234
                                  -- jalr x5, x7
                                  -- Mv x7 to x10
                                  -- Jump by A (x5)
                                  -- Opcode rd x5  r1 x7  filler
                                  -- 1111   0101   0111   0000
-                                14 => "1111010101110000", -- F530
-                                 -- sd x2, x3
-                                 -- Store 0x3 into memory address 1
-                                 -- Opcode rd x2  r1 x3  filler
-                                 -- 0011   0010   0011   0000
-                                17 => "0011011000110000",
+                                15 => "1111010101110000", -- F570
+                                 -- sd x7, x3
+                                 -- Store 0x7 into memory address 1
+                                 -- Opcode filler  r1 x7  r2 x3
+                                 -- 0011   0000    0111   0011
+                                30 => "0011000000100011", -- 3023
                                  -- ld x12, x3
                                  -- Load 0xF from memory address 3
-                                 -- Opcode rd x12 r1 x3  filler
-                                 -- 0001   1100   0011   0000
-                                18 => "0001110000110000",
+                                 -- Opcode rd x12 filler r2 x3
+                                 -- 0001   1100   0000   0011
+                                31 => "0001110000000011", -- 10C3
                                 -- ldi x6, 16
                                 others => "0010011000001111");
             outInstruction <= "0000000000000000";

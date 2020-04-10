@@ -25,19 +25,21 @@ begin
             memory1024 <= (others => "0000000000000000");
             outMemory <= "0000000000000000";
         else
-            if (cMemRead = '1') then
+            if (rising_edge(cMemRead)) then
                 outMemory <= memory1024(to_integer(unsigned(ADDR)));
+                report "cMemRead";
             end if;
-            if (cMemWrite = '1') then
+            if (rising_edge(cMemWrite)) then
                 memory1024(to_integer(unsigned(ADDR))) <= DIN;
+                report "cMemWrite";
             end if;
             if (cMemRead = '0' and cMemWrite = '0') then
                 -- Pass through DIN
                 -- Useful for ldi and mv instructions
                 outMemory <= DIN;
+                report "pass through";
             end if;
         end if;
-        
     end process;
 
 end Behavioral;

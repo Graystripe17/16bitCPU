@@ -17,7 +17,8 @@ entity RegisterFile is
         outr1toOffsetMux: out STD_LOGIC_VECTOR(15 downto 0);
         outr2toALU: out STD_LOGIC_VECTOR(15 downto 0);
         rdContent: out STD_LOGIC_VECTOR(15 downto 0);
-        toMemory: out STD_LOGIC_VECTOR(15 downto 0) := "0000000000000000";
+        toMemoryADDR: out STD_LOGIC_VECTOR(9 downto 0);
+        toMemoryDIN: out STD_LOGIC_VECTOR(15 downto 0) := "0000000000000000";
         PCoutput: out STD_LOGIC_VECTOR(15 downto 0);
         PCinput: in STD_LOGIC_VECTOR(15 downto 0);
         inr: in STD_LOGIC_VECTOR(3 downto 0);
@@ -38,10 +39,11 @@ begin
     outr1toOffsetMux <= register16(to_integer(unsigned(r1)));
     outr2toALU <= register16(to_integer(unsigned(r2)));
     rdContent <= register16(to_integer(unsigned(rd)));
-    toMemory <= register16(to_integer(unsigned(r1))); -- Load or store
+    toMemoryDIN <= register16(to_integer(unsigned(r1))); -- Load or store
+    toMemoryADDR <= register16(to_integer(unsigned(r2)))(9 downto 0);
     outr <= register16(to_integer(unsigned(inr))); -- Debug
 
-    process (CLK, writeInput)
+    process (CLK, writeInput, reset)
         begin
             if (reset = '1') then
 --                register16 <= (0 => "0000000000000000",
@@ -64,15 +66,15 @@ begin
             else
                 if falling_edge(CLK) then
                     register16(15) <= PCinput;
-                end if;
-                if (cLdi = '1') then
-                    -- Special instruction ignore MemToReg
-                    register16(to_integer(unsigned(rd))) <= "00000000" & r1 & r2;
-                elsif (cRegWrite = '1') then
-                    register16(to_integer(unsigned(rd))) <= writeInput;
-                elsif (cJalr = '1') then
-                    -- If JALR flag, write to return register x10
-                    register16(10) <= writeInput;
+                    if (cLdi = '1') then
+                        -- Special instruction ignore MemToReg
+                        register16(to_integer(unsigned(rd))) <= "00000000" & r1 & r2;
+                    elsif (cRegWrite = '1') then
+                        register16(to_integer(unsigned(rd))) <= writeInput;
+                    elsif (cJalr = '1') then
+                        -- If JALR flag, write to return register x10
+                        register16(10) <= writeInput;
+                    end if;
                 end if;
             end if;
     end process;

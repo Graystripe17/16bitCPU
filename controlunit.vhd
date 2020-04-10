@@ -72,7 +72,7 @@ begin
                     cJalr <= '0';
                 when "1011" | "1100" | "1101" | "1110" =>
                     -- beq | blt | bge | jal
-                    cRegWrite <= '1';
+                    cRegWrite <= '0'; -- Check
                     cOffset <= '1';
                     cMemWrite <= '0';
                     cMemRead <= '0';
